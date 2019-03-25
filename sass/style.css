@@ -1050,8 +1050,9 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
-/* line 239, _page.scss */
+/* line 240, _page.scss */
 .document__header h3 {
   margin: 0;
   font-family: "Europe Normal",arial;
@@ -1059,7 +1060,7 @@ header {
   color: #013264;
   font-weight: normal;
 }
-/* line 246, _page.scss */
+/* line 247, _page.scss */
 .document__header a {
   margin: 0;
   text-decoration: none;
@@ -1071,7 +1072,7 @@ header {
   font-size: 15px;
   position: relative;
 }
-/* line 256, _page.scss */
+/* line 257, _page.scss */
 .document__header a:before {
   content: "";
   position: absolute;
@@ -1083,11 +1084,11 @@ header {
   width: 9px;
   height: 10px;
 }
-/* line 267, _page.scss */
+/* line 268, _page.scss */
 .document__header a:hover {
   text-decoration: underline;
 }
-/* line 272, _page.scss */
+/* line 273, _page.scss */
 .document__body {
   max-height: 400px;
   width: 100%;
@@ -1095,13 +1096,13 @@ header {
   padding: 20px 0 0 0;
   margin: 0;
 }
-/* line 278, _page.scss */
+/* line 279, _page.scss */
 .document__body__item {
   width: 100%;
   margin-bottom: 15px;
   padding-right: 40px;
 }
-/* line 282, _page.scss */
+/* line 283, _page.scss */
 .document__body__item a {
   padding-left: 80px;
   position: relative;
@@ -1109,7 +1110,7 @@ header {
   width: 100%;
   text-decoration: none;
 }
-/* line 288, _page.scss */
+/* line 289, _page.scss */
 .document__body__item a label.ico {
   position: absolute;
   height: 100%;
@@ -1117,7 +1118,7 @@ header {
   top: 0;
   left: 30px;
 }
-/* line 296, _page.scss */
+/* line 297, _page.scss */
 .document__body__item__date {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -1125,7 +1126,7 @@ header {
   margin: 0 0 4px 0;
   width: 100%;
 }
-/* line 303, _page.scss */
+/* line 304, _page.scss */
 .document__body__item__name {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1134,17 +1135,58 @@ header {
   line-height: 18px;
   width: 100%;
 }
-
 /* line 314, _page.scss */
+.document .drop-option {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 380px;
+  border: 1px solid #DFE3E9;
+  background-color: #FFFFFF;
+  box-shadow: 4px 0 20px 0 rgba(0, 27, 70, 0.3);
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 25px;
+  z-index: 1;
+}
+/* line 327, _page.scss */
+.document .drop-option li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 330, _page.scss */
+.document .drop-option li a {
+  width: 100%;
+  padding: 0 0 0 20px;
+}
+/* line 333, _page.scss */
+.document .drop-option li a:before {
+  width: 0;
+  background: url("../assets/img/ico/check_b.svg") no-repeat center;
+  background-size: contain;
+  right: auto;
+  left: 0;
+}
+/* line 340, _page.scss */
+.document .drop-option li a.active:before {
+  width: 12px;
+}
+/* line 345, _page.scss */
+.document .drop-option.active {
+  display: block;
+}
+
+/* line 350, _page.scss */
 .news {
   width: calc(50% - 90px);
   position: relative;
 }
-/* line 317, _page.scss */
+/* line 353, _page.scss */
 .news__header {
   padding: 15px 0;
 }
-/* line 319, _page.scss */
+/* line 355, _page.scss */
 .news__header h3 {
   font-family: "Europe Normal",arial;
   font-weight: normal;
@@ -1153,13 +1195,13 @@ header {
   color: #013264;
   margin: 0;
 }
-/* line 328, _page.scss */
+/* line 364, _page.scss */
 .news__body {
   list-style-type: none;
   margin: 0;
   padding: 20px 0 0 0;
 }
-/* line 332, _page.scss */
+/* line 368, _page.scss */
 .news__body__item {
   height: 80px;
   margin-bottom: 20px;
@@ -1168,7 +1210,7 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 339, _page.scss */
+/* line 375, _page.scss */
 .news__body__item__img {
   background-size: cover !important;
   background-position: center !important;
@@ -1180,11 +1222,11 @@ header {
   flex-shrink: 0;
   position: relative;
 }
-/* line 349, _page.scss */
+/* line 385, _page.scss */
 .news__body__item__img:hover {
   box-shadow: 4px 0 20px 0 rgba(0, 27, 70, 0.2);
 }
-/* line 353, _page.scss */
+/* line 389, _page.scss */
 .news__body__item__wrap {
   display: inline-block;
   flex-grow: 0;
@@ -1194,7 +1236,7 @@ header {
   width: calc(100% - 170px);
   padding-right: 0;
 }
-/* line 361, _page.scss */
+/* line 397, _page.scss */
 .news__body__item__wrap__date {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -1203,7 +1245,7 @@ header {
   margin-bottom: 15px;
   color: #5D5F62;
 }
-/* line 369, _page.scss */
+/* line 405, _page.scss */
 .news__body__item__wrap__source {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -1213,11 +1255,11 @@ header {
   color: #4979FF;
   margin-left: 30px;
 }
-/* line 377, _page.scss */
+/* line 413, _page.scss */
 .news__body__item__wrap__source:hover {
   text-decoration: underline;
 }
-/* line 381, _page.scss */
+/* line 417, _page.scss */
 .news__body__item__wrap__text {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;

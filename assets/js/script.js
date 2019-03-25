@@ -71,4 +71,24 @@ $(document).ready(function () {
     function closePops() {
         $trigerPops.removeClass('active');
     }
+    var $simpleTriger = $('[data-drop-link]');
+    $simpleTriger.on('click',function () {
+        simpleDrop($(this).attr('data-drop-link'));
+        return false;
+    })
+    function simpleDrop($target) {
+        $('[data-drop-content='+ $target +']').toggleClass('active');
+        var temp =  $('[data-drop-content='+ $target +']');
+        $('[data-drop-content='+ $target +'] a').on('click',function () {
+            console.log($(this));
+            temp.removeClass('active');
+            return false;
+        });
+        $(document).mouseup(function (e) {
+            // var temps = temp;
+            if(temp.has(e.target).length === 0){
+                temp.removeClass('active');
+            }
+        })
+    }
 })

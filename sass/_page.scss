@@ -236,6 +236,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     h3{
       margin: 0;
       font-family: "Europe Normal",arial;
@@ -308,6 +309,41 @@
         line-height: 18px;
         width: 100%;
       }
+    }
+  }
+  .drop-option{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 380px;
+    border: 1px solid #DFE3E9;
+    background-color: #FFFFFF;
+    box-shadow: 4px 0 20px 0 rgba(0,27,70,0.3);
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 25px;
+    z-index: 1;
+    li{
+      width: 100%;
+      margin-bottom: 10px;
+      a{
+        width: 100%;
+        padding: 0 0 0 20px;
+        &:before{
+          width: 0;
+          background: url("../assets/img/ico/check_b.svg")no-repeat center;
+          background-size: contain;
+          right: auto;
+          left: 0;
+        }
+        &.active:before{
+          width: 12px;
+        }
+      }
+    }
+    &.active{
+      display: block;
     }
   }
 }
