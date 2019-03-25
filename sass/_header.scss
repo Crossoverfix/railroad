@@ -9,6 +9,11 @@ header{
       line-height: 21px;
       text-transform: uppercase;
     }
+    &__big{
+      font-size: 36px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
   }
   &__pops{
     &__flag{
@@ -451,6 +456,7 @@ header{
       }
     }
     &__search{
+      flex-grow: 3;
       &.disable{
         display: none;
       }

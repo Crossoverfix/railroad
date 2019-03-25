@@ -91,4 +91,31 @@ $(document).ready(function () {
             }
         })
     }
+    var $treeFolder = $(".catalog__tree__body__folder");
+    var $treeFolderP = $(".catalog__tree__body__folder p");
+    var $treeFolderReset = $(".catalog__tree__header a");
+    $treeFolderReset.on('click',function () {
+        $treeFolder.removeClass('active');
+        $treeFolder.removeClass('open');
+    })
+    $treeFolderP.on('click',function () {
+        $treeFolder.removeClass('active');
+        $(this).parent().addClass('active');
+        $(this).parent().toggleClass('open');
+    })
+    var $treeFolderTriger = $('.catalog__tree__btn');
+    var $treeFolderWindow = $('.flex-wrap');
+    $treeFolderTriger.on('click',function () {
+        if($treeFolderWindow.hasClass('show')){
+            $treeFolderTriger.removeClass('show');
+            $treeFolderWindow.removeClass('show');
+            $treeFolderWindow.addClass('hide');
+            $treeFolderTriger.addClass('hide');
+        } else {
+            $treeFolderTriger.removeClass('hide');
+            $treeFolderWindow.removeClass('hide');
+            $treeFolderWindow.addClass('show');
+            $treeFolderTriger.addClass('show');
+        }
+    })
 })

@@ -126,4 +126,36 @@
       background-size: contain;
     }
   }
+  &__list{
+    background: url("../assets/img/ico/th-list.svg")no-repeat center;
+    background-size: 15px auto;
+  }
+  &__tabl{
+    background: url("../assets/img/ico/th.svg")no-repeat center;
+    background-size: 15px auto;
+  }
+  &__print{
+    background: url("../assets/img/ico/printer.svg")no-repeat center;
+    background-size: 15px auto;
+  }
+  &__download{
+    background: url("../assets/img/ico/dawnload.svg")no-repeat center;
+    background-size: 15px 17px;
+  }
+  &__info{
+    background: url("../assets/img/ico/info.svg")no-repeat center;
+    background-size: 15px auto;
+  }
+  &__arrow{
+    &-left{
+      background: url("../assets/img/ico/angle-right.svg") no-repeat center;
+      background-size: 12px auto;
+      transform: rotate(180deg);
+    }
+    &-right{
+      background: url("../assets/img/ico/angle-right.svg") no-repeat center;
+      background-size: 12px auto;
+      transform: rotate(0deg);
+    }
+  }
 }
