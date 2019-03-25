@@ -1,0 +1,129 @@
+.ico{
+  border: none;
+  outline: none;
+  &__home{
+    background: url("../assets/img/ico/home.svg")no-repeat center;
+    background-size: 22px auto;
+  }
+  &__catalog{
+    background: url("../assets/img/ico/briefcase.svg")no-repeat center;
+    background-size: 22px auto;
+  }
+  &__discussion{
+    background: url("../assets/img/ico/alert2.svg")no-repeat center;
+    background-size: 22px auto;
+  }
+  &__about{
+    background: url("../assets/img/ico/help.svg")no-repeat center;
+    background-size: 22px auto;
+  }
+  &__pops{
+    &-green{
+      background: url("../assets/img/ico/announcement_green.svg")no-repeat center;
+      background-size: 28px auto;
+    }
+    &-red{
+      background: url("../assets/img/ico/announcement_red.svg")no-repeat center;
+      background-size: 28px auto;
+    }
+    &-blue{
+      background: url("../assets/img/ico/announcement_blue.svg")no-repeat center;
+      background-size: 28px auto;
+    }
+  }
+  &__search{
+    background: url("../assets/img/ico/search.svg")no-repeat center;
+    background-size: 16px auto;
+  }
+  &__close{
+    background: url("../assets/img/ico/clear.svg")no-repeat center;
+    background-size: 14px auto;
+    opacity: 0.6;
+  }
+  &__drop-down{
+    background: url("../assets/img/ico/caret_down_w.svg")no-repeat center;
+    background-size: 9px auto;
+  }
+  &__setting{
+    background: url("../assets/img/ico/equalizer.svg")no-repeat center;
+    background-size: 22px auto;
+  }
+  &__pdf{
+    background: url("../assets/img/ico/pdf.svg")no-repeat top center;
+    background-size: contain;
+  }
+  &__doc{
+    background: url("../assets/img/ico/doc.svg")no-repeat top center;
+    background-size: contain;
+  }
+  &__pops{
+    &-doc{
+      background: url("../assets/img/ico/file.svg")no-repeat center;
+      background-size: contain;
+    }
+    &-alert{
+      background: url("../assets/img/ico/report_problem.svg")no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__gog{
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 16px;
+      background: url("../assets/img/ico/settings.svg")no-repeat top center;
+      background-size: contain;
+    }
+  }
+  &__key{
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 16px;
+      background: url("../assets/img/ico/key.svg")no-repeat top center;
+      background-size: contain;
+    }
+  }
+  &__exit{
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 16px;
+      background: url("../assets/img/ico/logout.svg")no-repeat top center;
+      background-size: contain;
+    }
+  }
+  &__tel{
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 16px;
+      background: url("../assets/img/ico/call.svg")no-repeat top center;
+      background-size: contain;
+    }
+  }
+  &__mail{
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 16px;
+      background: url("../assets/img/ico/email.svg")no-repeat top center;
+      background-size: contain;
+    }
+  }
+}
