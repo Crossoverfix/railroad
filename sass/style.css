@@ -1688,12 +1688,13 @@ header {
   padding-top: 25px;
   width: 100%;
   position: relative;
+  z-index: 0;
 }
-/* line 764, _page.scss */
+/* line 765, _page.scss */
 .catalog__window__body a {
   text-decoration: none;
 }
-/* line 767, _page.scss */
+/* line 768, _page.scss */
 .catalog__window__body__line {
   width: 100%;
   display: flex;
@@ -1701,49 +1702,174 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
+  z-index: -1;
+  position: relative;
 }
-/* line 775, _page.scss */
+/* line 777, _page.scss */
+.catalog__window__body__line input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+/* line 791, _page.scss */
+.catalog__window__body__line input:before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+/* line 804, _page.scss */
 .catalog__window__body__line .line__first {
-  width: 3%;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid rgba(156, 181, 199, 0.4);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: auto;
 }
-/* line 778, _page.scss */
+/* line 815, _page.scss */
 .catalog__window__body__line .line__second {
-  width: 3.5%;
+  width: 20px;
+  height: 25px;
+  margin: 0 auto 0 0;
 }
-/* line 781, _page.scss */
+/* line 820, _page.scss */
 .catalog__window__body__line .line__third {
   width: 48%;
 }
-/* line 784, _page.scss */
+/* line 823, _page.scss */
 .catalog__window__body__line .line__four {
   width: 11%;
 }
-/* line 787, _page.scss */
+/* line 826, _page.scss */
 .catalog__window__body__line .line__five {
   width: 12.5%;
 }
-/* line 790, _page.scss */
+/* line 829, _page.scss */
 .catalog__window__body__line .line__six {
   width: 9%;
 }
-/* line 793, _page.scss */
+/* line 832, _page.scss */
 .catalog__window__body__line .line__seven {
   width: 10%;
 }
-/* line 796, _page.scss */
+/* line 835, _page.scss */
 .catalog__window__body__line .line__eight {
   width: 3%;
+  text-align: center;
+  color: white;
+  background-size: contain;
+  line-height: 17px;
+  font-size: 12px;
+  height: 20px;
 }
-/* line 800, _page.scss */
+/* line 845, _page.scss */
 .catalog__window__body__line.line {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 803, _page.scss */
+/* line 848, _page.scss */
 .catalog__window__body__line.line-head {
   height: 35px;
   background-color: #EDF4FF;
   border-top: 1px solid rgba(156, 181, 199, 0.4);
+}
+/* line 852, _page.scss */
+.catalog__window__body__line.line-head a {
+  height: 100%;
+}
+/* line 854, _page.scss */
+.catalog__window__body__line.line-head a p {
+  display: inline-block;
+  padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #013264;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  line-height: 35px;
+}
+/* line 865, _page.scss */
+.catalog__window__body__line.line-head a p:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 9px;
+  height: 10px;
+  background: url("../assets/img/ico/caret_down.svg") no-repeat center;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+/* line 878, _page.scss */
+.catalog__window__body__line.line-head input:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+/* line 884, _page.scss */
+.catalog__window__body__line.line-head input:checked:before {
+  background: url("../assets/img/ico/check_b.svg") no-repeat center white;
+  background-size: 12px auto;
+}
+/* line 889, _page.scss */
+.catalog__window__body__line.line-body {
+  padding: 20px 0 12px 0;
+  align-items: flex-start;
+}
+/* line 893, _page.scss */
+.catalog__window__body__line.line-body:hover input:before {
+  background: url("../assets/img/ico/check.svg") no-repeat center;
+  background-size: 14px auto;
+}
+/* line 898, _page.scss */
+.catalog__window__body__line.line-body:hover a p {
+  color: #BF2C37;
+}
+/* line 903, _page.scss */
+.catalog__window__body__line.line-body a {
+  padding-right: 30px;
+}
+/* line 905, _page.scss */
+.catalog__window__body__line.line-body a p {
+  color: #013264;
+}
+/* line 909, _page.scss */
+.catalog__window__body__line.line-body p {
+  color: #445660;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+}
+/* line 916, _page.scss */
+.catalog__window__body__line.line-body label {
+  border: none;
+}
+/* line 919, _page.scss */
+.catalog__window__body__line.line-body input:before {
+  background: url("../assets/img/ico/check_w.svg") no-repeat center;
+  background-size: 14px auto;
+  width: 20px;
+  height: 20px;
+}
+/* line 925, _page.scss */
+.catalog__window__body__line.line-body input:checked:before {
+  background: url("../assets/img/ico/check_b.svg") no-repeat center white;
+  background-size: 14px auto;
 }
 
 /* ╨Ю╤Б╨╜╨╛╨▓╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */
