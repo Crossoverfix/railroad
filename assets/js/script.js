@@ -118,4 +118,16 @@ $(document).ready(function () {
             $treeFolderTriger.addClass('show');
         }
     })
+    var $viewTriger = $("[data-view]");
+    $viewTriger.on('click',function(){
+        if($(this).attr('data-view') == 'list'){
+            $viewTriger.removeClass('active');
+            $(this).addClass('active');
+            $(".catalog__window__body").addClass('mod-list');
+        } else if ($(this).attr('data-view') == 'tabl'){
+            $viewTriger.removeClass('active');
+            $(this).addClass('active');
+            $(".catalog__window__body").removeClass('mod-list');
+        }
+    })
 })

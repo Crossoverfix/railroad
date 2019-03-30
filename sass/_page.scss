@@ -762,6 +762,38 @@
       width: 100%;
       position: relative;
       z-index: 0;
+      &.mod-list{
+        .catalog__window__body__line.line-head{
+          display: none;
+        }
+        .catalog__window__body__line .line{
+          &__four{
+            display: none;
+          }
+          &__five{
+            display: none;
+          }
+          &__six{
+            display: none;
+          }
+          &__seven{
+            display: none;
+          }
+          &__eight{
+            display: none;
+          }
+          &__first{
+            margin: 0 0 0 auto;
+          }
+          &__second{
+            margin: 0 15px;
+          }
+          &__third{
+            margin-right: auto;
+            width: 60%;
+          }
+        }
+      }
       a{
         text-decoration: none;
       }
@@ -862,6 +894,7 @@
                 margin: 0;
                 height: 100%;
                 line-height: 35px;
+                white-space: nowrap;
                 &:before{
                   content: "";
                   position: absolute;
