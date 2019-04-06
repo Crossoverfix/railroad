@@ -2,6 +2,7 @@ $(document).ready(function () {
     var $trigerPops = $("[data-triger]");
     $trigerPops.on("click",function () {
         sortPops($(this).attr('data-triger'));
+        return false;
     })
     function sortPops($data) {
         if($data == 'flag-green' || $data == 'flag-drop-h-green'){
@@ -13,10 +14,21 @@ $(document).ready(function () {
         } else if($data == 'flag'){
             closePops();
         } else if($data == 'user-in'){
-                openPops('user');
+            openPops('user');
         } else if($data == 'user'){
             closePops();
+        } else if($data == 'ablist'){
+            openPops('list');
+        } else if($data == 'ablist-drop-h'){
+            openPops('list-def');
+        } else if($data == 'ablist-drop-h-green'){
+            openPops('list-green');
+        } else if($data == 'ablist-drop-h-red'){
+            openPops('list-red');
+        } else if($data == 'ablist-drop-h-blue'){
+            openPops('list-blue');
         }
+        // return false;
     }
     function openPops($target) {
         if($('[data-triger="flag-drop"]').hasClass('active')){
@@ -62,9 +74,57 @@ $(document).ready(function () {
             $('[data-triger="user"]').addClass('active');
             $('[data-triger="user-drop"]').addClass('active');
         }
+        if($target == 'list'){
+            var test = $('.drop-ablist');
+            if($('.drop-ablist').hasClass('active')){
+                closePops();
+            } else {
+                $('.drop-ablist').addClass('active');
+                $('[data-triger="ablist-drop-h"]').addClass('active');
+                $('[data-triger="ablist-drop-b"]').addClass('active');
+            }
+        }
+        if($target == 'list-def'){
+            $('[data-triger="ablist-drop-h"]').addClass('active');
+            $('[data-triger="ablist-drop-b"]').addClass('active');
+            $('[data-triger="ablist-drop-h-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-blue"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-blue"]').removeClass('active');
+        } else if($target == 'list-green'){
+            $('[data-triger="ablist-drop-h-green"]').addClass('active');
+            $('[data-triger="ablist-drop-b-green"]').addClass('active');
+            $('[data-triger="ablist-drop-h"]').removeClass('active');
+            $('[data-triger="ablist-drop-b"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-blue"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-blue"]').removeClass('active');
+        } else if($target == 'list-red'){
+            $('[data-triger="ablist-drop-h-red"]').addClass('active');
+            $('[data-triger="ablist-drop-b-red"]').addClass('active');
+            $('[data-triger="ablist-drop-h-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-h"]').removeClass('active');
+            $('[data-triger="ablist-drop-b"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-blue"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-blue"]').removeClass('active');
+        } else if($target == 'list-blue'){
+            $('[data-triger="ablist-drop-h-blue"]').addClass('active');
+            $('[data-triger="ablist-drop-b-blue"]').addClass('active');
+            $('[data-triger="ablist-drop-h-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-green"]').removeClass('active');
+            $('[data-triger="ablist-drop-h-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-b-red"]').removeClass('active');
+            $('[data-triger="ablist-drop-h"]').removeClass('active');
+            $('[data-triger="ablist-drop-b"]').removeClass('active');
+        }
+        // return false;
     }
     $(document).mouseup(function (e) {
-        if($trigerPops.has(e.target).length === 0){
+        if($trigerPops.has(e.target).length === 0 && !$trigerPops.is(e.target)){
             closePops();
         }
     })
