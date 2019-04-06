@@ -190,4 +190,18 @@ $(document).ready(function () {
             $(".catalog__window__body").removeClass('mod-list');
         }
     })
+    var $closeTriger = $('[data-close]');
+    $closeTriger.on('click',function () {
+        closeSelect($(this).attr('data-close'),$(this));
+        return false
+    })
+    function closeSelect($select,$selectTarget) {
+        if($select == 'parent'){
+            $selectTarget.parent().addClass('disable');
+            $selectTarget.parent().hide(300);
+        } else if ($select == 'self'){
+            $selectTarget.addClass('disable');
+            $selectTarget.hide(300);
+        }
+    }
 })
