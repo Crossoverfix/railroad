@@ -214,4 +214,104 @@ $(document).ready(function () {
 
         }
     })
+    var $documentToggle = $('[data-doc-toggle]');
+    var $documentTabs = $('[data-doc-switch]');
+    var $documentPopsTabs = $('[data-pops-switch]');
+    $documentToggle.on('click',function () {
+        if($(this).attr('data-doc-toggle') == 'tree'){
+            if($('[data-doc-open="tree"]').hasClass('active')){
+                $('[data-doc-open="tree"]').removeClass('active');
+                $('[data-doc-switch]').removeClass('active');
+                $('[data-doc-tabs]').removeClass('active');
+                $('[data-doc-toggle="tree"]').removeClass('active');
+                $('.document-view__window').removeClass('active');
+            } else{
+                if($('[data-doc-open="pops"]').hasClass('active')){
+                    $('[data-doc-open="pops"]').removeClass('active');
+                    $('.document-view__window').removeClass('active');
+                    $('[data-doc-toggle="document-drop"]').removeClass('active');
+                    $('[data-pops-switch]').removeClass('active');
+                    $('[data-pops-tabs]').removeClass('active');
+                }
+                    $('[data-doc-open="tree"]').addClass('active');
+                    $('[data-doc-switch="chapter"]').addClass('active');
+                    $('[data-doc-tabs="chapter"]').addClass('active');
+                    $('[data-doc-toggle="tree"]').addClass('active');
+                    $('.document-view__window').addClass('active');
+            }
+        } else if($(this).attr('data-doc-toggle') == 'document-drop'){
+            if($('[data-doc-open="pops"]').hasClass('active')){
+                $('[data-doc-open="pops"]').removeClass('active');
+                $('.document-view__window').removeClass('active');
+                $('[data-doc-toggle="document-drop"]').removeClass('active');
+                $('[data-pops-switch]').removeClass('active');
+                $('[data-pops-tabs]').removeClass('active');
+            } else{
+                if($('[data-doc-open="tree"]').hasClass('active')){
+                    $('[data-doc-open="tree"]').removeClass('active');
+                    $('[data-doc-switch]').removeClass('active');
+                    $('[data-doc-tabs]').removeClass('active');
+                    $('[data-doc-toggle="tree"]').removeClass('active');
+                    $('.document-view__window').removeClass('active');
+                }
+                    $('.document-view__window').addClass('active');
+                    $('[data-doc-open="pops"]').addClass('active');
+                    $('[data-doc-toggle="document-drop"]').addClass('active');
+                    $('[data-pops-switch="document-drop-h"]').addClass('active');
+                    $('[data-pops-tabs="document-drop-b"]').addClass('active');
+            }
+        }
+    })
+    $documentTabs.on('click',function () {
+        if($(this).attr('data-doc-switch') == 'chapter'){
+            $('[data-doc-switch]').removeClass('active');
+            $('[data-doc-tabs]').removeClass('active');
+            $('[data-doc-switch="chapter"]').addClass('active');
+            $('[data-doc-tabs="chapter"]').addClass('active');
+        } else if($(this).attr('data-doc-switch') == 'edition'){
+            $('[data-doc-switch]').removeClass('active');
+            $('[data-doc-tabs]').removeClass('active');
+            $('[data-doc-switch="edition"]').addClass('active');
+            $('[data-doc-tabs="edition"]').addClass('active');
+        }
+    })
+    $documentPopsTabs.on('click',function () {
+        if($(this).attr('data-pops-switch') == 'document-drop-h'){
+            $('[data-pops-switch="document-drop-h"]').addClass('active');
+            $('[data-pops-tabs="document-drop-b"]').addClass('active');
+            $('[data-pops-switch="document-drop-h-green"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-green"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-red"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-red"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-blue"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-blue"]').removeClass('active');
+        } else if($(this).attr('data-pops-switch') == 'document-drop-h-green'){
+            $('[data-pops-switch="document-drop-h-green"]').addClass('active');
+            $('[data-pops-tabs="document-drop-b-green"]').addClass('active');
+            $('[data-pops-switch="document-drop-h"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-red"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-red"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-blue"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-blue"]').removeClass('active');
+        } else if($(this).attr('data-pops-switch') == 'document-drop-h-red'){
+            $('[data-pops-switch="document-drop-h-red"]').addClass('active');
+            $('[data-pops-tabs="document-drop-b-red"]').addClass('active');
+            $('[data-pops-switch="document-drop-h-green"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-green"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-blue"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-blue"]').removeClass('active');
+        } else if($(this).attr('data-pops-switch') == 'document-drop-h-blue'){
+            $('[data-pops-switch="document-drop-h-blue"]').addClass('active');
+            $('[data-pops-tabs="document-drop-b-blue"]').addClass('active');
+            $('[data-pops-switch="document-drop-h-green"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-green"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h-red"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b-red"]').removeClass('active');
+            $('[data-pops-switch="document-drop-h"]').removeClass('active');
+            $('[data-pops-tabs="document-drop-b"]').removeClass('active');
+        }
+            })
 })

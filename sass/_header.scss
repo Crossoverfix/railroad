@@ -326,6 +326,17 @@ header{
                 }
               }
             }
+            &-document{
+              ul{
+                li{
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                }
+              }
+            }
             &-green{
               .header__pops__drop__body__tabs__title p{
                 color: #00893B;
