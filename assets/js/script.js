@@ -314,4 +314,18 @@ $(document).ready(function () {
             $('[data-pops-tabs="document-drop-b"]').removeClass('active');
         }
             })
+    var $mobillCollapse = $('[data-mobill-collapse]');
+    $mobillCollapse.on('click',function () {
+        if($('.header__horizontal-bar__pops').hasClass('active')){
+            $('.header__horizontal-bar__pops').removeClass('active');
+            $('.header__vertical-bar').removeClass('active');
+            $('.header__horizontal-bar__search').removeClass('active');
+        } else{
+            $('.header__horizontal-bar__pops').addClass('active');
+            $('.header__vertical-bar').addClass('active');
+            if(!$('.header__horizontal-bar__search').hasClass('disable')){
+                $('.header__horizontal-bar__search').addClass('active');
+            }
+        }
+    })
 })

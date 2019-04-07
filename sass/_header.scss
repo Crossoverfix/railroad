@@ -555,3 +555,23 @@ header{
     }
   }
 }
+.btn__mobill-collapse{
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 35px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  span{
+    width: 35px;
+    height: 4px;
+    background-color: $c-blue;
+    display: inline-block;
+  }
+}
