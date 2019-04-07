@@ -477,6 +477,7 @@ header{
       background-color: white;
       position: relative;
       display: inline-block;
+      flex-shrink: 0;
       img{
         position: absolute;
         width: calc(100% - 20px);
