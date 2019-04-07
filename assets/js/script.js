@@ -204,4 +204,14 @@ $(document).ready(function () {
             $selectTarget.hide(300);
         }
     }
+    var $discussionTree = $('[data-tree]');
+    $discussionTree.on('click',function (e) {
+        if($('ul.line__drop').has(e.target).length === 0){
+            if($(this).attr('data-tree') == 'toggle'){
+                $(this).toggleClass('active');
+            }
+        } else {
+
+        }
+    })
 })

@@ -695,12 +695,16 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
+      position: relative;
+      padding-bottom: 20px;
       h2{
         flex-grow: 1;
         font-family: "Europe Normal",arial;
         font-size: 26px;
         line-height: 31px;
         color: $c-blue;
+        font-weight: normal;
+        margin: 0;
       }
       button{
         border: 1px solid #DCE2EB;
@@ -726,6 +730,66 @@
           width: 13px;
           background: url("../assets/img/ico/plus2.svg")no-repeat center;
           background-size: 13px;
+        }
+      }
+      a{
+        margin: 0;
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 20px;
+        font-family: "Europe Normal",arial;
+        font-weight: normal;
+        color: #3077DB;
+        font-size: 15px;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background: url("../assets/img/ico/caret_down_b.svg")no-repeat center;
+          background-size: contain;
+          width: 9px;
+          height: 10px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .drop-option{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 380px;
+        border: 1px solid #DFE3E9;
+        background-color: #FFFFFF;
+        box-shadow: 4px 0 20px 0 rgba(0,27,70,0.3);
+        list-style-type: none;
+        margin: 0;
+        padding: 20px 25px;
+        z-index: 1;
+        li{
+          width: 100%;
+          margin-bottom: 10px;
+          a{
+            width: 100%;
+            padding: 0 0 0 20px;
+            &:before{
+              width: 0;
+              background: url("../assets/img/ico/check_b.svg")no-repeat center;
+              background-size: contain;
+              right: auto;
+              left: 0;
+            }
+            &.active:before{
+              width: 12px;
+            }
+          }
+        }
+        &.active{
+          display: block;
         }
       }
     }
@@ -932,6 +996,14 @@
             cursor: pointer;
             position: relative;
             z-index: auto;
+            &.disable{
+              border: none;
+              input{
+                &:before{
+                  background-color: transparent;
+                }
+              }
+            }
           }
           &__second{
             width: 20px;
@@ -970,20 +1042,29 @@
             height: 35px;
             background-color: #EDF4FF;
             border-top: 1px solid rgba(156,181,199,0.4);
-            a{
+            .line__seven{
+              & > p{
+                margin: 0 auto;
+              }
+            }
+            div,a{
               height: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
               p{
                 display: inline-block;
                 padding-right: 20px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 12px;
-                //line-height: 15px;
+                line-height: 15px;
                 color: $c-blue;
                 position: relative;
                 margin: 0;
-                height: 100%;
-                line-height: 35px;
-                white-space: nowrap;
+                height: auto;
+                text-align: center;
+                //line-height: 35px;
+                //white-space: nowrap;
                 &:before{
                   content: "";
                   position: absolute;
@@ -994,6 +1075,22 @@
                   background: url("../assets/img/ico/caret_down.svg")no-repeat center;
                   background-size: contain;
                   transform: translateY(-50%);
+                }
+              }
+              span{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                p{
+                  font-size: 9px;
+                  padding: 0;
+                  width: 33%;
+                  &:before{
+                    width: 0;
+                  }
                 }
               }
             }
@@ -1070,6 +1167,228 @@
       }
       &.active ~ .catalog__window__nav-bar{
         padding-right: 400px;
+      }
+    }
+  }
+}
+.mod-discussion{
+  .catalog{
+    &__window{
+      &__body{
+        &__line{
+          &.line{
+            &-body{
+              border-bottom: 1px solid rgba(156,181,199,0.4);
+              cursor: pointer;
+              &:hover{
+                p{
+                  color: #BF2C37;
+                }
+                .line-drop{
+                  p{
+                    color: #013264;
+                  }
+                }
+              }
+              &.active{
+                background-color: #F8FDFF;
+                flex-wrap: wrap;
+                  .line__first{
+                    background-color: #1641B9;
+                    &:before{
+                      transform: rotate(180deg);
+                      background: url("../assets/img/ico/bullet.svg")no-repeat center;
+                      background-size: 11px auto;
+                    }
+                  }
+                .line__drop{
+                  display: block;
+                }
+              }
+              .line{
+                &__first{
+                  background-color: #EDF4FF;
+                  border-radius: 50%;
+                  position: relative;
+                  &:before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: url("../assets/img/ico/bullet_b.svg")no-repeat center;
+                    background-size: 11px auto;
+                    transform: rotate(90deg);
+                  }
+                }
+                &__third{
+                  color: $c-blue;
+                }
+                &__five{
+                  text-align: center;
+                  padding-right: 50px;
+                }
+                &__six{
+                  text-align: center;
+                  padding-right: 70px;
+                }
+                &__seven{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  flex-wrap: nowrap;
+                  justify-content: space-around;
+                  &__point{
+                    display: inline-block;
+                    padding-right: 0;
+                    width: 20px;
+                    height: 20px;
+                    color: white;
+                    font-size: 12px;
+                    line-height: 17px;
+                    text-align: center;
+                    &.point{
+                      &-green{
+                        background: url("../assets/img/ico/announcement_green.svg")no-repeat center;
+                        background-size: contain;
+                      }
+                      &-red{
+                        background: url("../assets/img/ico/announcement_red.svg")no-repeat center;
+                        background-size: contain;
+                      }
+                      &-blue{
+                        background: url("../assets/img/ico/announcement_blue.svg")no-repeat center;
+                        background-size: contain;
+                      }
+                    }
+                  }
+                }
+                &__drop{
+                  display: none;
+                  width: 100%;
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 10px 20px 10px 90px;
+                  cursor: auto;
+                  .line-drop{
+                    padding: 0;
+                  }
+                  li{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                  }
+                  &__head{
+                    height: 26px;
+                    background-color: #EDF4FF;
+                    align-items: center!important;
+                    p{
+                      min-width: 1px;
+                      min-height: 100%;
+                      display: inline-block;
+                      padding-right: 15px;
+                      font-family: 'Roboto', sans-serif;
+                      font-size: 12px;
+                      color: $c-blue;
+                      position: relative;
+                      &:before{
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 9px;
+                        background: url("../assets/img/ico/caret_down.svg")no-repeat center;
+                        background-size: contain;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                      }
+                    }
+                  }
+                  &__body{
+                    padding: 15px 0;
+                    border-bottom: 1px solid rgba(156,181,199,0.4);
+                    .line{
+                      &__second{
+                        label{
+                          width: 20px;
+                          height: 20px;
+                          display: inline-block;
+                          background-size: contain!important;
+                          color: white;
+                          text-align: center;
+                          font-family: 'Roboto', sans-serif;
+                          font-size: 13px;
+                        }
+                      }
+                      &__third{
+                        color: $c-blue;
+                      }
+                      &__four{
+                        color: #445660;
+                      }
+                      &__five{
+                        color: #4979FF;
+                        a{
+                          color: #4979FF;
+                          font-weight: bold;
+                          padding-right: 0;
+                          padding-left: 20px;
+                          position: relative;
+                          &:hover{
+                            text-decoration: underline;
+                          }
+                          &:before{
+                            content: "";
+                            position: absolute;
+                            width: 10px;
+                            height: 16px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: url("../assets/img/ico/caret_down_b.svg")no-repeat center;
+                            background-size: contain;
+                          }
+                        }
+                      }
+                      &__six{
+                        color: #445660;
+                      }
+                      &__seven{
+                        color: #445660;
+                      }
+                      &__eight{
+                        color: #445660;
+                      }
+                    }
+                  }
+                  .line{
+                    &__second{
+                      margin-right: 20px;
+                      width: 20px;
+                    }
+                    &__third{
+                      width: 40%;
+                    }
+                    &__eight{
+                      width: 10%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .line{
+            &__six{
+              width: 11%;
+            }
+            &__seven{
+              width: 12%;
+            }
+          }
+        }
       }
     }
   }
