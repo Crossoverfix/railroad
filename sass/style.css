@@ -1936,7 +1936,7 @@ header {
 /* line 878, _page.scss */
 .document-view__window__wrap iframe {
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 /* line 884, _page.scss */
 .document-view__pops {
