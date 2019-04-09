@@ -1643,6 +1643,27 @@
               font-size: 14px;
               line-height: 17px;
               margin: 0;
+              .special__red{
+                width: 100%;
+                display: block;
+                position: relative;
+                padding-left: 28px;
+                margin: 0 0 7px 0;
+                color: #BF2C37;
+                font-family: "Europe Normal";
+                font-size: 14px;
+                line-height: 16px;
+                &:before{
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: -3px;
+                  height: 20px;
+                  width: 20px;
+                  background: url("../assets/img/ico/report_problem.svg")no-repeat center;
+                  background-size: contain;
+                }
+              }
             }
             label{
               border: none;
@@ -1888,9 +1909,58 @@
                     }
                     &__third{
                       width: 40%;
+                      padding-right: 10px;
                     }
                     &__eight{
                       width: 10%;
+                    }
+                    &-drop{
+                      &.disable{
+                        position: relative;
+                        height: 25px;
+                        &:before{
+                          content: "";
+                          position: absolute;
+                          top: 12px;
+                          left: 50%;
+                          transform: translateX(-50%);
+                          height: 1px;
+                          width: 12px;
+                          background-color: #445660;
+                        }
+                        *{
+                          display: none;
+                        }
+                      }
+                    }
+                    &__special{
+                      width: 100%;
+                      padding: 10px 0 10px 65px;
+                      position: relative;
+                      &:before{
+                        content: "";
+                        position: absolute;
+                        left: 38px;
+                        top: 7px;
+                        height: 20px;
+                        width: 20px;
+                        background: url("../assets/img/ico/report_problem.svg")no-repeat center;
+                        background-size: contain;
+                      }
+                      p{
+                        font-family: "Europe Normal";
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: normal;
+                        color: black;
+                        span{
+                          font-family: "Europe Normal";
+                          font-size: 14px;
+                          line-height: 16px;
+                          font-weight: normal;
+                          color: #BF2C37;
+                        }
+                      }
                     }
                   }
                 }

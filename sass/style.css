@@ -2821,23 +2821,46 @@ header {
   line-height: 17px;
   margin: 0;
 }
-/* line 1647, _page.scss */
+/* line 1646, _page.scss */
+.catalog__window__body__line.line-body p .special__red {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin: 0 0 7px 0;
+  color: #BF2C37;
+  font-family: "Europe Normal";
+  font-size: 14px;
+  line-height: 16px;
+}
+/* line 1656, _page.scss */
+.catalog__window__body__line.line-body p .special__red:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  height: 20px;
+  width: 20px;
+  background: url("../assets/img/ico/report_problem.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 1668, _page.scss */
 .catalog__window__body__line.line-body label {
   border: none;
 }
-/* line 1650, _page.scss */
+/* line 1671, _page.scss */
 .catalog__window__body__line.line-body input:before {
   background: url("../assets/img/ico/check_w.svg") no-repeat center;
   background-size: 14px auto;
   width: 20px;
   height: 20px;
 }
-/* line 1656, _page.scss */
+/* line 1677, _page.scss */
 .catalog__window__body__line.line-body input:checked:before {
   background: url("../assets/img/ico/check_b.svg") no-repeat center white;
   background-size: 14px auto;
 }
-/* line 1664, _page.scss */
+/* line 1685, _page.scss */
 .catalog__window .drop-ablist {
   width: 400px;
   position: fixed;
@@ -2845,7 +2868,7 @@ header {
   right: 0;
   top: 100px;
 }
-/* line 1670, _page.scss */
+/* line 1691, _page.scss */
 .catalog__window .drop-ablist__close {
   position: absolute;
   left: -21px;
@@ -2856,54 +2879,54 @@ header {
   border: none;
   box-shadow: 4px 0 20px 0 rgba(0, 27, 70, 0.3);
 }
-/* line 1681, _page.scss */
+/* line 1702, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__nav-bar {
   padding-right: 400px;
 }
-/* line 1684, _page.scss */
+/* line 1705, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__body {
   padding-right: 400px;
 }
 
-/* line 1697, _page.scss */
+/* line 1718, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body {
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
   cursor: pointer;
 }
-/* line 1701, _page.scss */
+/* line 1722, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover p {
   color: #BF2C37;
 }
-/* line 1705, _page.scss */
+/* line 1726, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover .line-drop p {
   color: #013264;
 }
-/* line 1710, _page.scss */
+/* line 1731, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active {
   background-color: #F8FDFF;
   flex-wrap: wrap;
 }
-/* line 1713, _page.scss */
+/* line 1734, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first {
   background-color: #1641B9;
 }
-/* line 1715, _page.scss */
+/* line 1736, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first:before {
   transform: rotate(180deg);
   background: url("../assets/img/ico/bullet.svg") no-repeat center;
   background-size: 11px auto;
 }
-/* line 1721, _page.scss */
+/* line 1742, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__drop {
   display: block;
 }
-/* line 1726, _page.scss */
+/* line 1747, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first {
   background-color: #EDF4FF;
   border-radius: 50%;
   position: relative;
 }
-/* line 1730, _page.scss */
+/* line 1751, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first:before {
   content: "";
   width: 100%;
@@ -2915,21 +2938,21 @@ header {
   background-size: 11px auto;
   transform: rotate(90deg);
 }
-/* line 1742, _page.scss */
+/* line 1763, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__third {
   color: #013264;
 }
-/* line 1745, _page.scss */
+/* line 1766, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__five {
   text-align: center;
   padding-right: 50px;
 }
-/* line 1749, _page.scss */
+/* line 1770, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__six {
   text-align: center;
   padding-right: 70px;
 }
-/* line 1753, _page.scss */
+/* line 1774, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven {
   display: flex;
   flex-direction: row;
@@ -2937,7 +2960,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-/* line 1759, _page.scss */
+/* line 1780, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point {
   display: inline-block;
   padding-right: 0;
@@ -2948,22 +2971,22 @@ header {
   line-height: 17px;
   text-align: center;
 }
-/* line 1769, _page.scss */
+/* line 1790, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-green {
   background: url("../assets/img/ico/announcement_green.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1773, _page.scss */
+/* line 1794, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-red {
   background: url("../assets/img/ico/announcement_red.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1777, _page.scss */
+/* line 1798, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-blue {
   background: url("../assets/img/ico/announcement_blue.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1784, _page.scss */
+/* line 1805, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop {
   display: none;
   width: 100%;
@@ -2972,11 +2995,11 @@ header {
   padding: 10px 20px 10px 90px;
   cursor: auto;
 }
-/* line 1791, _page.scss */
+/* line 1812, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop {
   padding: 0;
 }
-/* line 1794, _page.scss */
+/* line 1815, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop li {
   display: flex;
   flex-direction: row;
@@ -2984,13 +3007,13 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 1801, _page.scss */
+/* line 1822, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head {
   height: 26px;
   background-color: #EDF4FF;
   align-items: center !important;
 }
-/* line 1805, _page.scss */
+/* line 1826, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p {
   min-width: 1px;
   min-height: 100%;
@@ -3001,7 +3024,7 @@ header {
   color: #013264;
   position: relative;
 }
-/* line 1814, _page.scss */
+/* line 1835, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p:before {
   content: "";
   position: absolute;
@@ -3013,12 +3036,12 @@ header {
   right: 0;
   transform: translateY(-50%);
 }
-/* line 1827, _page.scss */
+/* line 1848, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body {
   padding: 15px 0;
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
 }
-/* line 1832, _page.scss */
+/* line 1853, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__second label {
   width: 20px;
   height: 20px;
@@ -3029,19 +3052,19 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
-/* line 1843, _page.scss */
+/* line 1864, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__third {
   color: #013264;
 }
-/* line 1846, _page.scss */
+/* line 1867, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__four {
   color: #445660;
 }
-/* line 1849, _page.scss */
+/* line 1870, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five {
   color: #4979FF;
 }
-/* line 1851, _page.scss */
+/* line 1872, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a {
   color: #4979FF;
   font-weight: bold;
@@ -3049,11 +3072,11 @@ header {
   padding-left: 20px;
   position: relative;
 }
-/* line 1857, _page.scss */
+/* line 1878, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:hover {
   text-decoration: underline;
 }
-/* line 1860, _page.scss */
+/* line 1881, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:before {
   content: "";
   position: absolute;
@@ -3065,36 +3088,90 @@ header {
   background: url("../assets/img/ico/caret_down_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1873, _page.scss */
+/* line 1894, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__six {
   color: #445660;
 }
-/* line 1876, _page.scss */
+/* line 1897, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__seven {
   color: #445660;
 }
-/* line 1879, _page.scss */
+/* line 1900, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__eight {
   color: #445660;
 }
-/* line 1885, _page.scss */
+/* line 1906, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__second {
   margin-right: 20px;
   width: 20px;
 }
-/* line 1889, _page.scss */
+/* line 1910, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__third {
   width: 40%;
+  padding-right: 10px;
 }
-/* line 1892, _page.scss */
+/* line 1914, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__eight {
   width: 10%;
 }
-/* line 1901, _page.scss */
+/* line 1918, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable {
+  position: relative;
+  height: 25px;
+}
+/* line 1921, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 12px;
+  background-color: #445660;
+}
+/* line 1931, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable * {
+  display: none;
+}
+/* line 1936, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line__special {
+  width: 100%;
+  padding: 10px 0 10px 65px;
+  position: relative;
+}
+/* line 1940, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line__special:before {
+  content: "";
+  position: absolute;
+  left: 38px;
+  top: 7px;
+  height: 20px;
+  width: 20px;
+  background: url("../assets/img/ico/report_problem.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 1950, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p {
+  font-family: "Europe Normal";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: black;
+}
+/* line 1956, _page.scss */
+.mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p span {
+  font-family: "Europe Normal";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #BF2C37;
+}
+/* line 1971, _page.scss */
 .mod-discussion .catalog__window__body__line .line__six {
   width: 11%;
 }
-/* line 1904, _page.scss */
+/* line 1974, _page.scss */
 .mod-discussion .catalog__window__body__line .line__seven {
   width: 12%;
 }
