@@ -339,6 +339,10 @@ $(document).ready(function () {
         $('.document-view__window__wrap iframe body').scrollTop($tempAtrr + '%');
         $('.document-view__window__wrap iframe body > div').scrollTop($tempAtrr + '%');
         $('.document-view__window__wrap iframe body div').scrollTop($tempAtrr + '%');
+        $('.document-view__window__wrap iframe html').scrollTop($tempAtrr);
+        $('.document-view__window__wrap iframe body').scrollTop($tempAtrr);
+        $('.document-view__window__wrap iframe body > div').scrollTop($tempAtrr);
+        $('.document-view__window__wrap iframe body div').scrollTop($tempAtrr);
         return false;
     })
 })
