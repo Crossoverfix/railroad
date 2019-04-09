@@ -3068,20 +3068,24 @@ header {
 /* line 1870, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five {
   color: #4979FF;
+  padding-left: 15px;
 }
-/* line 1872, _page.scss */
+/* line 1873, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a {
   color: #4979FF;
   font-weight: bold;
   padding-right: 0;
   padding-left: 20px;
   position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
 }
-/* line 1878, _page.scss */
+/* line 1882, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:hover {
   text-decoration: underline;
 }
-/* line 1881, _page.scss */
+/* line 1885, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:before {
   content: "";
   position: absolute;
@@ -3093,38 +3097,38 @@ header {
   background: url("../assets/img/ico/caret_down_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1894, _page.scss */
+/* line 1898, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__six {
   color: #445660;
 }
-/* line 1897, _page.scss */
+/* line 1901, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__seven {
   color: #445660;
 }
-/* line 1900, _page.scss */
+/* line 1904, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__eight {
   color: #445660;
 }
-/* line 1906, _page.scss */
+/* line 1910, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__second {
   margin-right: 20px;
   width: 20px;
 }
-/* line 1910, _page.scss */
+/* line 1914, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__third {
   width: 40%;
   padding-right: 10px;
 }
-/* line 1914, _page.scss */
+/* line 1918, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__eight {
   width: 10%;
 }
-/* line 1918, _page.scss */
+/* line 1922, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable {
   position: relative;
   height: 25px;
 }
-/* line 1921, _page.scss */
+/* line 1925, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable:before {
   content: "";
   position: absolute;
@@ -3135,17 +3139,17 @@ header {
   width: 12px;
   background-color: #445660;
 }
-/* line 1931, _page.scss */
+/* line 1935, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable * {
   display: none;
 }
-/* line 1936, _page.scss */
+/* line 1940, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special {
   width: 100%;
   padding: 10px 0 10px 65px;
   position: relative;
 }
-/* line 1940, _page.scss */
+/* line 1944, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special:before {
   content: "";
   position: absolute;
@@ -3156,7 +3160,7 @@ header {
   background: url("../assets/img/ico/report_problem.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1950, _page.scss */
+/* line 1954, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3164,7 +3168,7 @@ header {
   font-weight: normal;
   color: black;
 }
-/* line 1956, _page.scss */
+/* line 1960, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p span {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3172,11 +3176,11 @@ header {
   font-weight: normal;
   color: #BF2C37;
 }
-/* line 1971, _page.scss */
+/* line 1975, _page.scss */
 .mod-discussion .catalog__window__body__line .line__six {
   width: 11%;
 }
-/* line 1974, _page.scss */
+/* line 1978, _page.scss */
 .mod-discussion .catalog__window__body__line .line__seven {
   width: 12%;
 }
