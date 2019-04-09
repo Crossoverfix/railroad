@@ -435,6 +435,14 @@
       align-items: center;
       justify-content: flex-start;
       position: relative;
+      &.header{
+        &-red{
+          background-color: #FFF7F7;
+          .document-view__header__doc-status{
+            color: #CA2C25;
+          }
+        }
+      }
       p{
         margin: 0;
       }
@@ -453,6 +461,15 @@
           font-size: 14px;
           line-height: 20px;
           flex-grow: 1;
+          font-family: 'Roboto', sans-serif;
+        }
+        &-status{
+          padding: 0 15px;
+          color: #222224;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: bolder;
+          flex-grow: 0;
           font-family: 'Roboto', sans-serif;
         }
         &-numb{
