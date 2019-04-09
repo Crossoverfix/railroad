@@ -496,6 +496,27 @@
       width: calc(100vw - 76px);
     }
   }
+  .catalog__window__body{
+    padding-bottom: 10px;
+  }
+  .catalog__window{
+    position: relative;
+    &:before{
+      content: "";
+      width: 100%;
+      height: 30px;
+      bottom: 25px;
+      left: 0;
+      position: absolute;
+      background-color: white;
+      z-index: 3;
+    }
+  }
+  .catalog__window__body.mod-list{
+    .catalog__window__body__line{
+     width: 100%;
+    }
+  }
 }
 @media screen and (max-width: 574px){
   .header__horizontal-bar__head-text{

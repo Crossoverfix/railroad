@@ -3951,25 +3951,51 @@ header {
   .alltable.mod-search .catalog__window__body {
     width: calc(100vw - 76px);
   }
+
+  /* line 499, _media.scss */
+  .catalog__window__body {
+    padding-bottom: 10px;
+  }
+
+  /* line 502, _media.scss */
+  .catalog__window {
+    position: relative;
+  }
+  /* line 504, _media.scss */
+  .catalog__window:before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    bottom: 25px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+  }
+
+  /* line 516, _media.scss */
+  .catalog__window__body.mod-list .catalog__window__body__line {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 574px) {
-  /* line 501, _media.scss */
+  /* line 522, _media.scss */
   .header__horizontal-bar__head-text {
     display: none;
   }
 
-  /* line 504, _media.scss */
+  /* line 525, _media.scss */
   .search__bar__wrap {
     flex-wrap: wrap;
     position: relative;
   }
 
-  /* line 508, _media.scss */
+  /* line 529, _media.scss */
   .search__bar__wrap label {
     width: 30px;
   }
 
-  /* line 511, _media.scss */
+  /* line 532, _media.scss */
   .search__bar__wrap__close {
     height: 30px;
     width: 30px;
@@ -3978,103 +4004,103 @@ header {
     right: 5px;
   }
 
-  /* line 518, _media.scss */
+  /* line 539, _media.scss */
   .search__bar {
     height: 120px;
   }
 
-  /* line 521, _media.scss */
+  /* line 542, _media.scss */
   .search__bar__wrap__btn-group {
     width: 100%;
     position: relative;
     top: 1px;
   }
 
-  /* line 526, _media.scss */
+  /* line 547, _media.scss */
   .document__header {
     padding: 15px 10px;
     flex-wrap: wrap;
   }
 
-  /* line 530, _media.scss */
+  /* line 551, _media.scss */
   .document__header a {
     margin-top: 5px;
   }
 
-  /* line 533, _media.scss */
+  /* line 554, _media.scss */
   .document .drop-option {
     width: 100%;
   }
 
-  /* line 536, _media.scss */
+  /* line 557, _media.scss */
   .document__body__item {
     padding-right: 10px;
   }
 
-  /* line 539, _media.scss */
+  /* line 560, _media.scss */
   .document__body__item a {
     padding-left: 40px;
   }
 
-  /* line 542, _media.scss */
+  /* line 563, _media.scss */
   .document__body__item a label.ico {
     width: 20px;
     left: 10px;
   }
 
-  /* line 546, _media.scss */
+  /* line 567, _media.scss */
   .document__body__item__name {
     font-size: 14px;
   }
 
-  /* line 549, _media.scss */
+  /* line 570, _media.scss */
   .document__body__item__date {
     font-size: 12px;
   }
 
-  /* line 552, _media.scss */
+  /* line 573, _media.scss */
   .group.mod-stretch .document.mod-small:nth-child(2n) {
     margin-left: 0;
   }
 
-  /* line 555, _media.scss */
+  /* line 576, _media.scss */
   .news__body {
     padding: 0;
   }
 
-  /* line 558, _media.scss */
+  /* line 579, _media.scss */
   .news__body__item {
     flex-wrap: wrap;
   }
 
-  /* line 561, _media.scss */
+  /* line 582, _media.scss */
   .news__body__item__img {
     width: 100%;
     padding-top: 45%;
   }
 
-  /* line 565, _media.scss */
+  /* line 586, _media.scss */
   .news__body__item__wrap {
     width: 100%;
     padding: 10px 5px 0 5px;
   }
 
-  /* line 569, _media.scss */
+  /* line 590, _media.scss */
   .news__body__item {
     height: auto;
   }
 
-  /* line 572, _media.scss */
+  /* line 593, _media.scss */
   .alltable {
     padding: 74px 0 0 0;
   }
 
-  /* line 575, _media.scss */
+  /* line 596, _media.scss */
   .catalog__window {
     margin-top: 0;
   }
 
-  /* line 578, _media.scss */
+  /* line 599, _media.scss */
   .flex-wrap .catalog__tree {
     top: 74px;
     width: 100%;
@@ -4082,183 +4108,183 @@ header {
     left: -100%;
   }
 
-  /* line 584, _media.scss */
+  /* line 605, _media.scss */
   .catalog__tree__btn {
     top: 10px;
     right: -20px;
   }
-  /* line 587, _media.scss */
+  /* line 608, _media.scss */
   .catalog__tree__btn.show {
     right: 0;
   }
 
-  /* line 591, _media.scss */
+  /* line 612, _media.scss */
   .catalog__tree__header {
     padding: 0 40px 0 0;
   }
 
-  /* line 594, _media.scss */
+  /* line 615, _media.scss */
   .catalog__window__header {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  /* line 597, _media.scss */
+  /* line 618, _media.scss */
   .catalog__window__header h2 {
     text-align: center;
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 10px;
   }
-  /* line 603, _media.scss */
+  /* line 624, _media.scss */
   .catalog__window__header button {
     margin-left: 0;
   }
 
-  /* line 607, _media.scss */
+  /* line 628, _media.scss */
   .catalog__window__breadcrumb ul {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  /* line 611, _media.scss */
+  /* line 632, _media.scss */
   .catalog__window__breadcrumb ul:before {
     top: 0;
     transform: translateY(0);
   }
 
-  /* line 615, _media.scss */
+  /* line 636, _media.scss */
   .catalog__window__breadcrumb ul li {
     margin-bottom: 5px;
     margin-right: 0;
   }
 
-  /* line 619, _media.scss */
+  /* line 640, _media.scss */
   .catalog__window__breadcrumb ul a:before {
     height: 0;
   }
 
-  /* line 622, _media.scss */
+  /* line 643, _media.scss */
   .catalog__window__nav-bar {
     flex-direction: column;
   }
 
-  /* line 625, _media.scss */
+  /* line 646, _media.scss */
   .catalog__window__nav-bar__btn {
     margin-bottom: 10px;
   }
 
-  /* line 628, _media.scss */
+  /* line 649, _media.scss */
   .catalog__window {
     padding: 25px 10px;
   }
 
-  /* line 631, _media.scss */
+  /* line 652, _media.scss */
   .catalog__window__body {
     width: calc(100vw - 40px);
   }
 
-  /* line 634, _media.scss */
+  /* line 655, _media.scss */
   .alltable.mod-discussion .catalog__window__body {
     width: calc(100vw - 40px);
   }
 
-  /* line 637, _media.scss */
+  /* line 658, _media.scss */
   .document-view__header {
     flex-direction: column;
   }
 
-  /* line 640, _media.scss */
+  /* line 661, _media.scss */
   .document-view__header p {
     padding: 0;
     margin-top: 10px;
   }
 
-  /* line 644, _media.scss */
+  /* line 665, _media.scss */
   .document-view__nav-bar {
     height: auto;
     flex-wrap: wrap;
     padding: 10px;
   }
 
-  /* line 649, _media.scss */
+  /* line 670, _media.scss */
   .document-view__nav-bar__group {
     margin-top: 5px;
   }
 
-  /* line 652, _media.scss */
+  /* line 673, _media.scss */
   .document-view__nav-bar__group:nth-child(1) {
     order: 2;
   }
 
-  /* line 655, _media.scss */
+  /* line 676, _media.scss */
   .document-view__nav-bar__group:nth-child(2) {
     order: 1;
     width: 100%;
   }
 
-  /* line 659, _media.scss */
+  /* line 680, _media.scss */
   .document-view__nav-bar__group:nth-child(3) {
     order: 1;
     width: 100%;
   }
 
-  /* line 663, _media.scss */
+  /* line 684, _media.scss */
   .document-view__nav-bar__group:nth-child(4) {
     order: 2;
   }
 
-  /* line 668, _media.scss */
+  /* line 689, _media.scss */
   .document-view__nav-bar__group .group__toggle-tree {
     height: 30px;
   }
-  /* line 671, _media.scss */
+  /* line 692, _media.scss */
   .document-view__nav-bar__group .group__check {
     height: 30px;
   }
-  /* line 674, _media.scss */
+  /* line 695, _media.scss */
   .document-view__nav-bar__group .group__search {
     height: 30px;
   }
-  /* line 677, _media.scss */
+  /* line 698, _media.scss */
   .document-view__nav-bar__group .group__print {
     height: 30px;
   }
-  /* line 680, _media.scss */
+  /* line 701, _media.scss */
   .document-view__nav-bar__group .group__download {
     height: 30px;
   }
-  /* line 683, _media.scss */
+  /* line 704, _media.scss */
   .document-view__nav-bar__group .group__about {
     height: 30px;
   }
 
-  /* line 688, _media.scss */
+  /* line 709, _media.scss */
   .document-view__nav-bar__group .group__toggle-tree.active:before {
     top: calc(50% + 2px);
   }
 
-  /* line 691, _media.scss */
+  /* line 712, _media.scss */
   .document-view__nav-bar__group .group__about.active:before {
     top: calc(50% + 2px);
   }
 
-  /* line 694, _media.scss */
+  /* line 715, _media.scss */
   .document-view__tree.active {
     width: 100%;
   }
 
-  /* line 697, _media.scss */
+  /* line 718, _media.scss */
   .document-view__window.active {
     padding: 0;
     width: 0;
   }
 
-  /* line 701, _media.scss */
+  /* line 722, _media.scss */
   .document-view__pops.active {
     width: 100%;
   }
 
-  /* line 704, _media.scss */
+  /* line 725, _media.scss */
   .document-view__window__wrap__document {
     height: 600px;
   }
