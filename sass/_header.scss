@@ -242,9 +242,10 @@ header{
           overflow: scroll;
           &.active{
             display: block;
+            overflow: hidden;
           }
           ul{
-            padding: 20px 36px 20px 20px;
+            padding: 20px;
             margin: 0;
             list-style-type: none;
             li{
@@ -294,9 +295,37 @@ header{
             a{
               color: #0D00FF;
             }
+            &__alert{
+              width: 100%;
+              padding: 10px 25px 10px 40px;
+              position: relative;
+              background-color: rgba(255,207,64,0.2);
+              &:before{
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 20px;
+                height: 20px;
+                background: url("../assets/img/ico/report_problem.svg")no-repeat center;
+                background-size: contain;
+              }
+              font-family: "Europe Normal";
+              font-size: 14px;
+              font-weight: normal;
+              line-height: 19px;
+              color: black;
+              span{
+                font-family: "Europe Normal";
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 19px;
+                color: #BF2C37;
+              }
+            }
           }
           &__name{
-            width: 25%;
+            width: 32%;
             text-align: right;
             padding-right: 5px;
             font-family: 'Roboto', sans-serif;
@@ -306,7 +335,7 @@ header{
             margin: 0;
             &-text{
               padding-left: 5px;
-              width: 75%;
+              width: 68%;
               font-family: 'Roboto', sans-serif;
               color: #013264;
               font-size: 14px;

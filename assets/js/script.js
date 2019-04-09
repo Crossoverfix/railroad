@@ -328,4 +328,8 @@ $(document).ready(function () {
             }
         }
     })
+    var $checkCatalog = $('label.ico__check');
+    $checkCatalog.on('click',function () {
+        $(this).toggleClass('active');
+    })
 })
