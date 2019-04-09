@@ -335,6 +335,10 @@ $(document).ready(function () {
     var $scrollDoc = $('[data-scroll-doc]');
     $scrollDoc.on('click',function () {
         let $tempAtrr = $(this).attr('data-scroll-doc');
+        $('.document-view__window__wrap iframe html').scrollTop($tempAtrr + '%');
         $('.document-view__window__wrap iframe body').scrollTop($tempAtrr + '%');
+        $('.document-view__window__wrap iframe body > div').scrollTop($tempAtrr + '%');
+        $('.document-view__window__wrap iframe body div').scrollTop($tempAtrr + '%');
+        return false;
     })
 })
