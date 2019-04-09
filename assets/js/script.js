@@ -332,4 +332,9 @@ $(document).ready(function () {
     $checkCatalog.on('click',function () {
         $(this).toggleClass('active');
     })
+    var $scrollDoc = $('[data-scroll-doc]');
+    $scrollDoc.on('click',function () {
+        let $tempAtrr = $(this).atrr('data-scroll-doc');
+        $('.document-view__window__wrap iframe').scrollTop($tempAtrr + '%');
+    })
 })
