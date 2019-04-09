@@ -68,6 +68,10 @@
     background: url("../assets/img/ico/txt.svg")no-repeat top center;
     background-size: contain;
   }
+  &__view{
+    background: url("../assets/img/ico/dark_view_doc.svg")no-repeat top center;
+    background-size: contain;
+  }
   &__pops{
     &-doc{
       background: url("../assets/img/ico/file.svg")no-repeat center;

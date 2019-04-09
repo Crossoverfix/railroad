@@ -94,17 +94,22 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/txt.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 72, _ico.scss */
+/* line 71, _ico.scss */
+.ico__view {
+  background: url("../assets/img/ico/dark_view_doc.svg") no-repeat top center;
+  background-size: contain;
+}
+/* line 76, _ico.scss */
 .ico__pops-doc {
   background: url("../assets/img/ico/file.svg") no-repeat center;
   background-size: contain;
 }
-/* line 76, _ico.scss */
+/* line 80, _ico.scss */
 .ico__pops-alert {
   background: url("../assets/img/ico/report_problem.svg") no-repeat center;
   background-size: contain;
 }
-/* line 82, _ico.scss */
+/* line 86, _ico.scss */
 .ico__gog:before {
   content: "";
   position: absolute;
@@ -115,7 +120,7 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/settings.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 94, _ico.scss */
+/* line 98, _ico.scss */
 .ico__key:before {
   content: "";
   position: absolute;
@@ -126,7 +131,7 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/key.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 106, _ico.scss */
+/* line 110, _ico.scss */
 .ico__exit:before {
   content: "";
   position: absolute;
@@ -137,7 +142,7 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/logout.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 118, _ico.scss */
+/* line 122, _ico.scss */
 .ico__tel:before {
   content: "";
   position: absolute;
@@ -148,7 +153,7 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/call.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 130, _ico.scss */
+/* line 134, _ico.scss */
 .ico__mail:before {
   content: "";
   position: absolute;
@@ -159,49 +164,49 @@ button, button:active, button:hover, button:visited, button:focus {
   background: url("../assets/img/ico/email.svg") no-repeat top center;
   background-size: contain;
 }
-/* line 141, _ico.scss */
+/* line 145, _ico.scss */
 .ico__list {
   background: url("../assets/img/ico/th-list.svg") no-repeat center;
   background-size: 15px auto;
 }
-/* line 145, _ico.scss */
+/* line 149, _ico.scss */
 .ico__tabl {
   background: url("../assets/img/ico/th.svg") no-repeat center;
   background-size: 15px auto;
 }
-/* line 149, _ico.scss */
+/* line 153, _ico.scss */
 .ico__print {
   background: url("../assets/img/ico/printer.svg") no-repeat center;
   background-size: 15px auto;
 }
-/* line 153, _ico.scss */
+/* line 157, _ico.scss */
 .ico__download {
   background: url("../assets/img/ico/dawnload.svg") no-repeat center;
   background-size: 15px 17px;
 }
-/* line 157, _ico.scss */
+/* line 161, _ico.scss */
 .ico__info {
   background: url("../assets/img/ico/info.svg") no-repeat center;
   background-size: 15px auto;
 }
-/* line 162, _ico.scss */
+/* line 166, _ico.scss */
 .ico__arrow-left {
   background: url("../assets/img/ico/angle-right.svg") no-repeat center;
   background-size: 12px auto;
   transform: rotate(180deg);
 }
-/* line 167, _ico.scss */
+/* line 171, _ico.scss */
 .ico__arrow-right {
   background: url("../assets/img/ico/angle-right.svg") no-repeat center;
   background-size: 12px auto;
   transform: rotate(0deg);
 }
-/* line 173, _ico.scss */
+/* line 177, _ico.scss */
 .ico__comment {
   padding-left: 30px;
   position: relative;
 }
-/* line 176, _ico.scss */
+/* line 180, _ico.scss */
 .ico__comment:before {
   content: "";
   position: absolute;
@@ -1211,7 +1216,7 @@ header {
 /* line 206, _page.scss */
 .search__teg-bar {
   width: 100%;
-  padding: 40px 0 30px 0;
+  padding: 0 0 30px 0;
 }
 /* line 209, _page.scss */
 .search__teg-bar h2 {
