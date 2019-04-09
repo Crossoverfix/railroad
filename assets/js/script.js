@@ -335,6 +335,6 @@ $(document).ready(function () {
     var $scrollDoc = $('[data-scroll-doc]');
     $scrollDoc.on('click',function () {
         let $tempAtrr = $(this).attr('data-scroll-doc');
-        $('.document-view__window__wrap iframe').scrollTop($tempAtrr + '%');
+        $('.document-view__window__wrap iframe body').scrollTop($tempAtrr + '%');
     })
 })
