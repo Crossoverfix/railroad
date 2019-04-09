@@ -1610,6 +1610,21 @@
               background: url("../assets/img/ico/check_b.svg")no-repeat center white;
               background-size: 12px auto;
             }
+            .ico__check{
+              &.active{
+                &:before{
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  background: url("../assets/img/ico/check_b.svg")no-repeat center;
+                  background-size: 14px auto;
+                }
+              }
+            }
           }
           &-body{
             padding: 20px 0 12px 0;
@@ -1628,7 +1643,7 @@
               }
               &.active{
                 &:before{
-                  background: url("../assets/img/ico/check_b.svg")no-repeat center white;
+                  background: url("../assets/img/ico/check_b.svg")no-repeat center;
                   background-size: 14px auto;
                 }
               }
