@@ -2,7 +2,6 @@ $(document).ready(function () {
     var $trigerPops = $("[data-triger]");
     $trigerPops.on("click",function () {
         sortPops($(this).attr('data-triger'));
-        return false;
     })
     function sortPops($data) {
         if($data == 'flag-green' || $data == 'flag-drop-h-green'){
