@@ -3266,7 +3266,8 @@ header {
 /* line 2055, _page.scss */
 .light-box__photo {
   display: none;
-  width: 80%;
+  width: 75%;
+  max-height: 80%;
   position: absolute;
   left: auto;
   right: 50%;
@@ -3278,19 +3279,19 @@ header {
 .light-box__photo.active {
   display: block;
 }
-/* line 2067, _page.scss */
+/* line 2068, _page.scss */
 .light-box__photo__item {
   display: none;
 }
-/* line 2069, _page.scss */
+/* line 2070, _page.scss */
 .light-box__photo__item.active {
   display: block;
 }
-/* line 2072, _page.scss */
+/* line 2073, _page.scss */
 .light-box__photo__item img {
   width: 100%;
 }
-/* line 2075, _page.scss */
+/* line 2076, _page.scss */
 .light-box__photo__item p {
   margin: -5px 0 0 0;
   width: 100%;
@@ -3302,10 +3303,10 @@ header {
   font-weight: normal;
   font-size: 20px;
 }
-/* line 2088, _page.scss */
+/* line 2089, _page.scss */
 .light-box__video {
   display: none;
-  width: 80%;
+  width: 75%;
   position: absolute;
   left: auto;
   right: 50%;
@@ -3313,9 +3314,30 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2090, _page.scss */
+/* line 2091, _page.scss */
 .light-box__video.active {
   display: block;
+}
+/* line 2101, _page.scss */
+.light-box__video__item {
+  display: none;
+}
+/* line 2103, _page.scss */
+.light-box__video__item.active {
+  display: block;
+}
+/* line 2106, _page.scss */
+.light-box__video__item video {
+  width: 100%;
+}
+/* line 2111, _page.scss */
+.light-box button.ico {
+  position: absolute;
+  right: -36px;
+  top: 0;
+  height: 46px;
+  width: 36px;
+  background-color: #BF2C37;
 }
 
 /* ╨Ю╤Б╨╜╨╛╨▓╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */

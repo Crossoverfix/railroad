@@ -332,4 +332,21 @@ $(document).ready(function () {
     $checkCatalog.on('click',function () {
         $(this).toggleClass('active');
     })
+    var $lightBoxPhoto = $('[data-photo]');
+    var $lightBoxVideo = $('[data-video]');
+    $lightBoxPhoto.on('click',function () {
+        openLightBox('photo',$(this).attr('data-photo'));
+    })
+    $lightBoxVideo.on('click',function () {
+        openLightBox('video',$(this).attr('data-video'));
+    })
+    function openLightBox(type,object) {
+        $('.light-box').addClass('active');
+        if(type == 'photo'){
+            $('.light-box__photo').addClass('active');
+            $('.light-box__photo__item[data-open-photo="' + object + '"]').addClass('active');
+        } else if (type =='video'){
+
+        }
+    }
 })

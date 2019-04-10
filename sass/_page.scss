@@ -2057,7 +2057,8 @@
     &.active{
       display: block;
     }
-    width: 80%;
+    width: 75%;
+    max-height: 80%;
     position: absolute;
     left: auto;
     right: 50%;
@@ -2090,12 +2091,29 @@
     &.active{
       display: block;
     }
-    width: 80%;
+    width: 75%;
     position: absolute;
     left: auto;
     right: 50%;
     top: auto;
     bottom: calc(50% + 100px);
     transform: translate(calc(50% - -35px),calc(50% - -150px));
+    &__item{
+      display: none;
+      &.active{
+        display: block;
+      }
+      video{
+        width: 100%;
+      }
+    }
+  }
+  button.ico{
+    position: absolute;
+    right: -36px;
+    top: 0;
+    height: 46px;
+    width: 36px;
+    background-color: #BF2C37;
   }
 }
