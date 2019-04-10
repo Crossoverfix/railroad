@@ -319,10 +319,10 @@
                     <div class="document-view__window__wrap__document no-height">
                         <img src="assets/doc/12.jpg" alt="doc">
                     </div>
-                    <div data-photo="photo-1" class="document-view__window__wrap__document no-height">
+                    <div data-photo="photo-1" class="document-view__window__wrap__document no-height light-box__triger">
                         <img src="assets/doc/photo-light.jpg" alt="doc">
                     </div>
-                    <div data-video="video-1" class="document-view__window__wrap__document no-height">
+                    <div data-video="video-1" class="document-view__window__wrap__document no-height light-box__triger">
                         <img src="assets/doc/video-light.jpg" alt="doc">
                     </div>
                 </div>
@@ -476,6 +476,20 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="light-box active">
+        <div class="light-box__photo active">
+            <div class="light-box__photo__item active" data-open-photo="photo-1">
+                <img alt="img" src="assets/doc/open-photo.jpg">
+                <p>Рис.1 - Шпалы железобетонные, балласт щебеночный </p>
+            </div>
+        </div>
+        <div class="light-box__video">
+            <div class="light-box__video__item" data-open-photo="video-1">
+                <!--<iframe src="assets/doc/open-video.mp4"></iframe>-->
+            </div>
+        </div>
+        <button class="ico ico__close"></button>
     </div>
 </main>
 <footer>
