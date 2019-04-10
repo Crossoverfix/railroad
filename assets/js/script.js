@@ -367,4 +367,8 @@ $(document).ready(function () {
         $('.light-box__video').removeClass('active');
         $('.light-box__video__item').removeClass('active');
     }
+    var $closeDocBtn = $('.document-view button.document-view__header__close');
+    $closeDocBtn.on('click',function () {
+        history.go(-1);
+    })
 })
