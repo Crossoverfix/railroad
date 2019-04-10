@@ -371,6 +371,11 @@
           top: 0;
           left: 30px;
         }
+        &.select{
+          p.document__body__item__name{
+            color:  #004c97;
+          }
+        }
       }
       &__date{
         font-family: 'Roboto', sans-serif;
