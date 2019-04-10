@@ -3297,8 +3297,12 @@ header {
   background-color: white;
   padding: 25px 10px;
   text-align: center;
+  color: #013264;
+  font-family: "Europe Normal";
+  font-weight: normal;
+  font-size: 20px;
 }
-/* line 2084, _page.scss */
+/* line 2088, _page.scss */
 .light-box__video {
   display: none;
   width: 80%;
@@ -3309,7 +3313,7 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2086, _page.scss */
+/* line 2090, _page.scss */
 .light-box__video.active {
   display: block;
 }
