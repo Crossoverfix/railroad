@@ -92,7 +92,7 @@
       border-radius: 5px;
       background-color: #FFFFFF;
       width: 100%;
-      height: 60px;
+      height: 50px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -175,7 +175,7 @@
       }
       a.search__bar__wrap__submit{
         text-align: center;
-        line-height: 58px;
+        line-height: 50px;
         text-decoration: none;
       }
       &__setting{
@@ -625,6 +625,12 @@
                 width: 7px;
                 background: url("../assets/img/ico/unfold_more.svg")no-repeat center;
                 background-size: contain;
+              }
+              &.link{
+                padding-right: 0;
+                &:before{
+                  width: 0;
+                }
               }
             }
           }

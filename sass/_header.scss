@@ -10,7 +10,7 @@ header{
       text-transform: uppercase;
     }
     &__big{
-      font-size: 36px;
+      font-size: 26px;
       line-height: 40px;
       text-transform: uppercase;
     }
@@ -341,6 +341,10 @@ header{
               font-size: 14px;
               line-height: 18px;
               margin: 0;
+              &.color-red{
+                color: #CA2C25;
+                font-weight: bolder;
+              }
             }
           }
           &.tabs-content{
