@@ -1736,6 +1736,13 @@
               background: url("../assets/img/ico/check_b.svg")no-repeat center white;
               background-size: 14px auto;
             }
+            .line.ico.line__second{
+              cursor: pointer;
+              &:hover{
+                background: url("../assets/img/ico/dark_view_doc.svg")no-repeat top center;
+                background-size: contain;
+              }
+            }
           }
         }
       }
