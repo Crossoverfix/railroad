@@ -53,7 +53,7 @@ $(document).ready(function () {
                 $('[data-triger="flag-drop-h-blue"]').addClass('active');
                 $('[data-triger="flag-drop-b-blue"]').addClass('active');
             }
-        } else {
+        } else if($target != 'list' && !$('[data-triger="flag-drop"]').hasClass('active')){
             $trigerPops.removeClass('active');
             $('[data-triger="flag"]').addClass('active');
             $('[data-triger="flag-drop"]').addClass('active');

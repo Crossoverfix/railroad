@@ -2946,9 +2946,9 @@ header {
   position: fixed;
   left: auto;
   right: 0;
-  top: 100px;
+  top: 130px;
 }
-/* line 1756, _page.scss */
+/* line 1757, _page.scss */
 .catalog__window .drop-ablist__close {
   position: absolute;
   left: -21px;
@@ -2959,54 +2959,54 @@ header {
   border: none;
   box-shadow: 4px 0 20px 0 rgba(0, 27, 70, 0.3);
 }
-/* line 1767, _page.scss */
+/* line 1768, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__nav-bar {
   padding-right: 400px;
 }
-/* line 1770, _page.scss */
+/* line 1771, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__body {
   padding-right: 400px;
 }
 
-/* line 1783, _page.scss */
+/* line 1784, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body {
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
   cursor: pointer;
 }
-/* line 1787, _page.scss */
+/* line 1788, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover p {
   color: #BF2C37;
 }
-/* line 1791, _page.scss */
+/* line 1792, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover .line-drop p {
   color: #013264;
 }
-/* line 1796, _page.scss */
+/* line 1797, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active {
   background-color: #F8FDFF;
   flex-wrap: wrap;
 }
-/* line 1799, _page.scss */
+/* line 1800, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first {
   background-color: #1641B9;
 }
-/* line 1801, _page.scss */
+/* line 1802, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first:before {
   transform: rotate(180deg);
   background: url("../assets/img/ico/bullet.svg") no-repeat center;
   background-size: 11px auto;
 }
-/* line 1807, _page.scss */
+/* line 1808, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__drop {
   display: block;
 }
-/* line 1812, _page.scss */
+/* line 1813, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first {
   background-color: #EDF4FF;
   border-radius: 50%;
   position: relative;
 }
-/* line 1816, _page.scss */
+/* line 1817, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first:before {
   content: "";
   width: 100%;
@@ -3018,21 +3018,21 @@ header {
   background-size: 11px auto;
   transform: rotate(90deg);
 }
-/* line 1828, _page.scss */
+/* line 1829, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__third {
   color: #013264;
 }
-/* line 1831, _page.scss */
+/* line 1832, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__five {
   text-align: center;
   padding-right: 50px;
 }
-/* line 1835, _page.scss */
+/* line 1836, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__six {
   text-align: center;
   padding-right: 70px;
 }
-/* line 1839, _page.scss */
+/* line 1840, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven {
   display: flex;
   flex-direction: row;
@@ -3040,7 +3040,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-/* line 1845, _page.scss */
+/* line 1846, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point {
   display: inline-block;
   padding-right: 0;
@@ -3051,22 +3051,22 @@ header {
   line-height: 17px;
   text-align: center;
 }
-/* line 1855, _page.scss */
+/* line 1856, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-green {
   background: url("../assets/img/ico/announcement_green.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1859, _page.scss */
+/* line 1860, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-red {
   background: url("../assets/img/ico/announcement_red.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1863, _page.scss */
+/* line 1864, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-blue {
   background: url("../assets/img/ico/announcement_blue.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1870, _page.scss */
+/* line 1871, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop {
   display: none;
   width: 100%;
@@ -3075,11 +3075,11 @@ header {
   padding: 10px 20px 10px 90px;
   cursor: auto;
 }
-/* line 1877, _page.scss */
+/* line 1878, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop {
   padding: 0;
 }
-/* line 1880, _page.scss */
+/* line 1881, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop li {
   display: flex;
   flex-direction: row;
@@ -3087,13 +3087,13 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 1887, _page.scss */
+/* line 1888, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head {
   height: 26px;
   background-color: #EDF4FF;
   align-items: center !important;
 }
-/* line 1891, _page.scss */
+/* line 1892, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p {
   min-width: 1px;
   min-height: 100%;
@@ -3104,7 +3104,7 @@ header {
   color: #013264;
   position: relative;
 }
-/* line 1900, _page.scss */
+/* line 1901, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p:before {
   content: "";
   position: absolute;
@@ -3116,12 +3116,12 @@ header {
   right: 0;
   transform: translateY(-50%);
 }
-/* line 1913, _page.scss */
+/* line 1914, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body {
   padding: 15px 0;
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
 }
-/* line 1918, _page.scss */
+/* line 1919, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__second label {
   width: 20px;
   height: 20px;
@@ -3132,20 +3132,20 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
-/* line 1929, _page.scss */
+/* line 1930, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__third {
   color: #013264;
 }
-/* line 1932, _page.scss */
+/* line 1933, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__four {
   color: #445660;
 }
-/* line 1935, _page.scss */
+/* line 1936, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five {
   color: #4979FF;
   padding-left: 15px;
 }
-/* line 1938, _page.scss */
+/* line 1939, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a {
   color: #4979FF;
   font-weight: bold;
@@ -3156,11 +3156,11 @@ header {
   width: 100%;
   text-align: left;
 }
-/* line 1947, _page.scss */
+/* line 1948, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:hover {
   text-decoration: underline;
 }
-/* line 1950, _page.scss */
+/* line 1951, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:before {
   content: "";
   position: absolute;
@@ -3172,38 +3172,38 @@ header {
   background: url("../assets/img/ico/caret_down_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1963, _page.scss */
+/* line 1964, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__six {
   color: #445660;
 }
-/* line 1966, _page.scss */
+/* line 1967, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__seven {
   color: #445660;
 }
-/* line 1969, _page.scss */
+/* line 1970, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__eight {
   color: #445660;
 }
-/* line 1975, _page.scss */
+/* line 1976, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__second {
   margin-right: 20px;
   width: 20px;
 }
-/* line 1979, _page.scss */
+/* line 1980, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__third {
   width: 40%;
   padding-right: 10px;
 }
-/* line 1983, _page.scss */
+/* line 1984, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__eight {
   width: 10%;
 }
-/* line 1987, _page.scss */
+/* line 1988, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable {
   position: relative;
   height: 25px;
 }
-/* line 1990, _page.scss */
+/* line 1991, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable:before {
   content: "";
   position: absolute;
@@ -3214,17 +3214,17 @@ header {
   width: 12px;
   background-color: #445660;
 }
-/* line 2000, _page.scss */
+/* line 2001, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable * {
   display: none;
 }
-/* line 2005, _page.scss */
+/* line 2006, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special {
   width: 100%;
   padding: 10px 0 10px 65px;
   position: relative;
 }
-/* line 2009, _page.scss */
+/* line 2010, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special:before {
   content: "";
   position: absolute;
@@ -3235,7 +3235,7 @@ header {
   background: url("../assets/img/ico/report_problem.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2019, _page.scss */
+/* line 2020, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3243,7 +3243,7 @@ header {
   font-weight: normal;
   color: black;
 }
-/* line 2025, _page.scss */
+/* line 2026, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p span {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3251,16 +3251,16 @@ header {
   font-weight: normal;
   color: #BF2C37;
 }
-/* line 2040, _page.scss */
+/* line 2041, _page.scss */
 .mod-discussion .catalog__window__body__line .line__six {
   width: 11%;
 }
-/* line 2043, _page.scss */
+/* line 2044, _page.scss */
 .mod-discussion .catalog__window__body__line .line__seven {
   width: 12%;
 }
 
-/* line 2052, _page.scss */
+/* line 2053, _page.scss */
 .light-box {
   display: none;
   position: fixed;
@@ -3272,11 +3272,11 @@ header {
   z-index: 10;
   padding: 100px 0 0 70px;
 }
-/* line 2054, _page.scss */
+/* line 2055, _page.scss */
 .light-box.active {
   display: block;
 }
-/* line 2065, _page.scss */
+/* line 2066, _page.scss */
 .light-box__photo {
   display: none;
   width: 75%;
@@ -3288,23 +3288,23 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2067, _page.scss */
+/* line 2068, _page.scss */
 .light-box__photo.active {
   display: block;
 }
-/* line 2078, _page.scss */
+/* line 2079, _page.scss */
 .light-box__photo__item {
   display: none;
 }
-/* line 2080, _page.scss */
+/* line 2081, _page.scss */
 .light-box__photo__item.active {
   display: block;
 }
-/* line 2083, _page.scss */
+/* line 2084, _page.scss */
 .light-box__photo__item img {
   width: 100%;
 }
-/* line 2086, _page.scss */
+/* line 2087, _page.scss */
 .light-box__photo__item p {
   margin: -5px 0 0 0;
   width: 100%;
@@ -3316,7 +3316,7 @@ header {
   font-weight: normal;
   font-size: 20px;
 }
-/* line 2099, _page.scss */
+/* line 2100, _page.scss */
 .light-box__video {
   display: none;
   width: 75%;
@@ -3328,25 +3328,25 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2101, _page.scss */
+/* line 2102, _page.scss */
 .light-box__video.active {
   display: block;
 }
-/* line 2112, _page.scss */
+/* line 2113, _page.scss */
 .light-box__video__item {
   display: none;
   height: 100%;
 }
-/* line 2115, _page.scss */
+/* line 2116, _page.scss */
 .light-box__video__item.active {
   display: block;
 }
-/* line 2118, _page.scss */
+/* line 2119, _page.scss */
 .light-box__video__item video {
   width: 100%;
   height: 100%;
 }
-/* line 2124, _page.scss */
+/* line 2125, _page.scss */
 .light-box button.ico {
   position: absolute;
   right: -36px;
