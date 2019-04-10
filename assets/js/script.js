@@ -334,11 +334,15 @@ $(document).ready(function () {
     })
     var $lightBoxPhoto = $('[data-photo]');
     var $lightBoxVideo = $('[data-video]');
+    var $lightBoxClose = $('.light-box button.ico__abclose');
     $lightBoxPhoto.on('click',function () {
         openLightBox('photo',$(this).attr('data-photo'));
     })
     $lightBoxVideo.on('click',function () {
         openLightBox('video',$(this).attr('data-video'));
+    })
+    $lightBoxClose.on('click',function () {
+        closeLightBox();
     })
     function openLightBox(type,object) {
         $('.light-box').addClass('active');
@@ -355,5 +359,12 @@ $(document).ready(function () {
                 $('.light-box__video').css({'width':'55%','bottom':'calc(50% + 170px)'});
             }
         }
+    }
+    function closeLightBox() {
+        $('.light-box').removeClass('active');
+        $('.light-box__photo').removeClass('active');
+        $('.light-box__photo__item').removeClass('active');
+        $('.light-box__video').removeClass('active');
+        $('.light-box__video__item').removeClass('active');
     }
 })
