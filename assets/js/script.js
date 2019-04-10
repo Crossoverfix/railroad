@@ -74,10 +74,10 @@ $(document).ready(function () {
             $('[data-triger="user-drop"]').addClass('active');
         }
         if($target == 'list'){
-            var test = $('.drop-ablist');
             if($('.drop-ablist').hasClass('active')){
                 closePops();
             } else {
+                closePops();
                 $('.drop-ablist').addClass('active');
                 $('[data-triger="ablist-drop-h"]').addClass('active');
                 $('[data-triger="ablist-drop-b"]').addClass('active');
