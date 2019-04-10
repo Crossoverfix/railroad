@@ -208,7 +208,7 @@ $(document).ready(function () {
     $discussionTree.on('click',function (e) {
         if($('ul.line__drop').has(e.target).length === 0){
             if($(this).attr('data-tree') == 'toggle'){
-                $(this).toggleClass('active');
+                $(this).parent().toggleClass('active');
             }
         } else {
 
