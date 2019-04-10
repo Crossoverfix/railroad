@@ -3307,6 +3307,7 @@ header {
 .light-box__video {
   display: none;
   width: 75%;
+  max-height: 70%;
   position: absolute;
   left: auto;
   right: 50%;
@@ -3318,19 +3319,21 @@ header {
 .light-box__video.active {
   display: block;
 }
-/* line 2101, _page.scss */
+/* line 2102, _page.scss */
 .light-box__video__item {
   display: none;
+  height: 100%;
 }
-/* line 2103, _page.scss */
+/* line 2105, _page.scss */
 .light-box__video__item.active {
   display: block;
 }
-/* line 2106, _page.scss */
+/* line 2108, _page.scss */
 .light-box__video__item video {
   width: 100%;
+  height: 100%;
 }
-/* line 2111, _page.scss */
+/* line 2114, _page.scss */
 .light-box button.ico {
   position: absolute;
   right: -36px;

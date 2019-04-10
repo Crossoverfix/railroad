@@ -345,8 +345,15 @@ $(document).ready(function () {
         if(type == 'photo'){
             $('.light-box__photo').addClass('active');
             $('.light-box__photo__item[data-open-photo="' + object + '"]').addClass('active');
+            if($('.light-box__photo__item[data-open-photo="' + object + '"]').outerHeight() >  $('.light-box__photo').outerHeight() ){
+                $('.light-box__photo').css('width','60%');
+            }
         } else if (type =='video'){
-
+            $('.light-box__video').addClass('active');
+            $('.light-box__video__item[data-open-video="' + object + '"]').addClass('active');
+            if($('.light-box__video__item[data-open-video="' + object + '"]').outerHeight() >  $('.light-box__video').outerHeight()){
+                $('.light-box__video').css({'width':'55%','bottom':'calc(50% + 170px)'});
+            }
         }
     }
 })
