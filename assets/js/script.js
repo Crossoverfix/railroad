@@ -332,20 +332,4 @@ $(document).ready(function () {
     $checkCatalog.on('click',function () {
         $(this).toggleClass('active');
     })
-    // var $scrollDoc = $('[data-scroll-doc]');
-    // $scrollDoc.on('click',function () {
-    //     let $tempAtrr = $(this).attr('data-scroll-doc');
-    //     let test =  $('.document-view__window__wrap iframe');
-    //     let ttest1 = document.getElementById('test');
-    //     let ttest2 = ttest1.contentWindow.document;
-    //     let ttest3 = ttest2.body;
-    //     let ttest4 = ttest3.find('div[role="document"]');
-    //     let test1 =  $('.document-view__window__wrap iframe').contentWindow.document;
-    //     let test2 =  $('.document-view__window__wrap iframe').contentWindow.document.body;
-    //     let test3 =  $('.document-view__window__wrap iframe').contentWindow.document.body.find('div[role="document"]');
-    //     $('.document-view__window__wrap iframe div[role="document"]').scrollTop($tempAtrr + '%');
-    //
-    //     $('.document-view__window__wrap iframe div[role="document"]').scrollTop($tempAtrr);
-    //     return false;
-    // })
 })
