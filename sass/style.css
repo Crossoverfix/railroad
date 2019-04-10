@@ -2653,11 +2653,15 @@ header {
   margin-right: auto;
   width: 60%;
 }
-/* line 1478, _page.scss */
+/* line 1477, _page.scss */
+.catalog__window__body.mod-list .catalog__window__body__line {
+  border-bottom: none;
+}
+/* line 1481, _page.scss */
 .catalog__window__body a {
   text-decoration: none;
 }
-/* line 1481, _page.scss */
+/* line 1484, _page.scss */
 .catalog__window__body__line {
   width: 100%;
   display: flex;
@@ -2668,7 +2672,7 @@ header {
   z-index: -1;
   position: relative;
 }
-/* line 1490, _page.scss */
+/* line 1493, _page.scss */
 .catalog__window__body__line input {
   position: absolute;
   left: 0;
@@ -2678,7 +2682,7 @@ header {
   height: 0;
   margin: 0;
 }
-/* line 1504, _page.scss */
+/* line 1507, _page.scss */
 .catalog__window__body__line input:before {
   content: "";
   position: absolute;
@@ -2689,7 +2693,7 @@ header {
   transform: translate(-50%, -50%);
   z-index: 3;
 }
-/* line 1517, _page.scss */
+/* line 1520, _page.scss */
 .catalog__window__body__line .line__first {
   width: 20px;
   height: 20px;
@@ -2701,41 +2705,41 @@ header {
   position: relative;
   z-index: auto;
 }
-/* line 1527, _page.scss */
+/* line 1530, _page.scss */
 .catalog__window__body__line .line__first.disable {
   border: none;
 }
-/* line 1530, _page.scss */
+/* line 1533, _page.scss */
 .catalog__window__body__line .line__first.disable input:before {
   background-color: transparent;
 }
-/* line 1536, _page.scss */
+/* line 1539, _page.scss */
 .catalog__window__body__line .line__second {
   width: 20px;
   height: 25px;
   margin: 0 auto 0 0;
 }
-/* line 1541, _page.scss */
+/* line 1544, _page.scss */
 .catalog__window__body__line .line__third {
   width: 48%;
 }
-/* line 1544, _page.scss */
+/* line 1547, _page.scss */
 .catalog__window__body__line .line__four {
   width: 11%;
 }
-/* line 1547, _page.scss */
+/* line 1550, _page.scss */
 .catalog__window__body__line .line__five {
   width: 12.5%;
 }
-/* line 1550, _page.scss */
+/* line 1553, _page.scss */
 .catalog__window__body__line .line__six {
   width: 9%;
 }
-/* line 1553, _page.scss */
+/* line 1556, _page.scss */
 .catalog__window__body__line .line__seven {
   width: 10%;
 }
-/* line 1556, _page.scss */
+/* line 1559, _page.scss */
 .catalog__window__body__line .line__eight {
   width: 3%;
   text-align: center;
@@ -2745,29 +2749,29 @@ header {
   font-size: 12px;
   height: 20px;
 }
-/* line 1566, _page.scss */
+/* line 1569, _page.scss */
 .catalog__window__body__line.line {
   flex-shrink: 0;
   flex-grow: 0;
 }
-/* line 1569, _page.scss */
+/* line 1572, _page.scss */
 .catalog__window__body__line.line-head {
   height: 35px;
   background-color: #EDF4FF;
   border-top: 1px solid rgba(156, 181, 199, 0.4);
 }
-/* line 1574, _page.scss */
+/* line 1577, _page.scss */
 .catalog__window__body__line.line-head .line__seven > p {
   margin: 0 auto;
 }
-/* line 1578, _page.scss */
+/* line 1581, _page.scss */
 .catalog__window__body__line.line-head div, .catalog__window__body__line.line-head a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 1583, _page.scss */
+/* line 1586, _page.scss */
 .catalog__window__body__line.line-head div p, .catalog__window__body__line.line-head a p {
   display: inline-block;
   padding-right: 20px;
@@ -2780,7 +2784,7 @@ header {
   height: auto;
   text-align: center;
 }
-/* line 1596, _page.scss */
+/* line 1599, _page.scss */
 .catalog__window__body__line.line-head div p:before, .catalog__window__body__line.line-head a p:before {
   content: "";
   position: absolute;
@@ -2792,7 +2796,7 @@ header {
   background-size: contain;
   transform: translateY(-50%);
 }
-/* line 1608, _page.scss */
+/* line 1611, _page.scss */
 .catalog__window__body__line.line-head div span, .catalog__window__body__line.line-head a span {
   display: flex;
   flex-direction: row;
@@ -2801,29 +2805,29 @@ header {
   justify-content: space-around;
   width: 100%;
 }
-/* line 1615, _page.scss */
+/* line 1618, _page.scss */
 .catalog__window__body__line.line-head div span p, .catalog__window__body__line.line-head a span p {
   font-size: 9px;
   padding: 0;
   width: 33%;
 }
-/* line 1619, _page.scss */
+/* line 1622, _page.scss */
 .catalog__window__body__line.line-head div span p:before, .catalog__window__body__line.line-head a span p:before {
   width: 0;
 }
-/* line 1625, _page.scss */
+/* line 1628, _page.scss */
 .catalog__window__body__line.line-head input:before {
   width: 20px;
   height: 20px;
   border-radius: 5px;
   background-color: white;
 }
-/* line 1631, _page.scss */
+/* line 1634, _page.scss */
 .catalog__window__body__line.line-head input:checked:before {
   background: url("../assets/img/ico/check_b.svg") no-repeat center white;
   background-size: 12px auto;
 }
-/* line 1637, _page.scss */
+/* line 1640, _page.scss */
 .catalog__window__body__line.line-head .ico__check.active:before {
   position: absolute;
   left: 50%;
@@ -2835,13 +2839,13 @@ header {
   background: url("../assets/img/ico/check_b.svg") no-repeat center;
   background-size: 14px auto;
 }
-/* line 1651, _page.scss */
+/* line 1654, _page.scss */
 .catalog__window__body__line.line-body {
   padding: 20px 0 12px 0;
   align-items: flex-start;
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
 }
-/* line 1656, _page.scss */
+/* line 1659, _page.scss */
 .catalog__window__body__line.line-body .ico__check:before {
   position: absolute;
   left: 50%;
@@ -2853,34 +2857,34 @@ header {
   width: 20px;
   height: 20px;
 }
-/* line 1668, _page.scss */
+/* line 1671, _page.scss */
 .catalog__window__body__line.line-body .ico__check.active:before {
   background: url("../assets/img/ico/check_b.svg") no-repeat center;
   background-size: 14px auto;
 }
-/* line 1675, _page.scss */
+/* line 1678, _page.scss */
 .catalog__window__body__line.line-body:hover .ico__check:before {
   background: url("../assets/img/ico/check.svg") no-repeat center;
   background-size: 14px auto;
 }
-/* line 1679, _page.scss */
+/* line 1682, _page.scss */
 .catalog__window__body__line.line-body:hover input:before {
   background: url("../assets/img/ico/check.svg") no-repeat center;
   background-size: 14px auto;
 }
-/* line 1684, _page.scss */
+/* line 1687, _page.scss */
 .catalog__window__body__line.line-body:hover a p {
   color: #BF2C37;
 }
-/* line 1689, _page.scss */
+/* line 1692, _page.scss */
 .catalog__window__body__line.line-body a {
   padding-right: 30px;
 }
-/* line 1691, _page.scss */
+/* line 1694, _page.scss */
 .catalog__window__body__line.line-body a p {
   color: #013264;
 }
-/* line 1695, _page.scss */
+/* line 1698, _page.scss */
 .catalog__window__body__line.line-body p {
   color: #445660;
   font-family: 'Roboto', sans-serif;
@@ -2888,7 +2892,7 @@ header {
   line-height: 17px;
   margin: 0;
 }
-/* line 1701, _page.scss */
+/* line 1704, _page.scss */
 .catalog__window__body__line.line-body p .special__red {
   width: 100%;
   display: block;
@@ -2900,7 +2904,7 @@ header {
   font-size: 14px;
   line-height: 16px;
 }
-/* line 1711, _page.scss */
+/* line 1714, _page.scss */
 .catalog__window__body__line.line-body p .special__red:before {
   content: "";
   position: absolute;
@@ -2911,23 +2915,23 @@ header {
   background: url("../assets/img/ico/report_problem.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1723, _page.scss */
+/* line 1726, _page.scss */
 .catalog__window__body__line.line-body label {
   border: none;
 }
-/* line 1726, _page.scss */
+/* line 1729, _page.scss */
 .catalog__window__body__line.line-body input:before {
   background: url("../assets/img/ico/check_w.svg") no-repeat center;
   background-size: 14px auto;
   width: 20px;
   height: 20px;
 }
-/* line 1732, _page.scss */
+/* line 1735, _page.scss */
 .catalog__window__body__line.line-body input:checked:before {
   background: url("../assets/img/ico/check_b.svg") no-repeat center white;
   background-size: 14px auto;
 }
-/* line 1740, _page.scss */
+/* line 1743, _page.scss */
 .catalog__window .drop-ablist {
   width: 400px;
   position: fixed;
@@ -2935,7 +2939,7 @@ header {
   right: 0;
   top: 100px;
 }
-/* line 1746, _page.scss */
+/* line 1749, _page.scss */
 .catalog__window .drop-ablist__close {
   position: absolute;
   left: -21px;
@@ -2946,54 +2950,54 @@ header {
   border: none;
   box-shadow: 4px 0 20px 0 rgba(0, 27, 70, 0.3);
 }
-/* line 1757, _page.scss */
+/* line 1760, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__nav-bar {
   padding-right: 400px;
 }
-/* line 1760, _page.scss */
+/* line 1763, _page.scss */
 .catalog__window .drop-ablist.active ~ .catalog__window__body {
   padding-right: 400px;
 }
 
-/* line 1773, _page.scss */
+/* line 1776, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body {
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
   cursor: pointer;
 }
-/* line 1777, _page.scss */
+/* line 1780, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover p {
   color: #BF2C37;
 }
-/* line 1781, _page.scss */
+/* line 1784, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body:hover .line-drop p {
   color: #013264;
 }
-/* line 1786, _page.scss */
+/* line 1789, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active {
   background-color: #F8FDFF;
   flex-wrap: wrap;
 }
-/* line 1789, _page.scss */
+/* line 1792, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first {
   background-color: #1641B9;
 }
-/* line 1791, _page.scss */
+/* line 1794, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__first:before {
   transform: rotate(180deg);
   background: url("../assets/img/ico/bullet.svg") no-repeat center;
   background-size: 11px auto;
 }
-/* line 1797, _page.scss */
+/* line 1800, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body.active .line__drop {
   display: block;
 }
-/* line 1802, _page.scss */
+/* line 1805, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first {
   background-color: #EDF4FF;
   border-radius: 50%;
   position: relative;
 }
-/* line 1806, _page.scss */
+/* line 1809, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__first:before {
   content: "";
   width: 100%;
@@ -3005,21 +3009,21 @@ header {
   background-size: 11px auto;
   transform: rotate(90deg);
 }
-/* line 1818, _page.scss */
+/* line 1821, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__third {
   color: #013264;
 }
-/* line 1821, _page.scss */
+/* line 1824, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__five {
   text-align: center;
   padding-right: 50px;
 }
-/* line 1825, _page.scss */
+/* line 1828, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__six {
   text-align: center;
   padding-right: 70px;
 }
-/* line 1829, _page.scss */
+/* line 1832, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven {
   display: flex;
   flex-direction: row;
@@ -3027,7 +3031,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
-/* line 1835, _page.scss */
+/* line 1838, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point {
   display: inline-block;
   padding-right: 0;
@@ -3038,22 +3042,22 @@ header {
   line-height: 17px;
   text-align: center;
 }
-/* line 1845, _page.scss */
+/* line 1848, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-green {
   background: url("../assets/img/ico/announcement_green.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1849, _page.scss */
+/* line 1852, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-red {
   background: url("../assets/img/ico/announcement_red.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1853, _page.scss */
+/* line 1856, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__seven__point.point-blue {
   background: url("../assets/img/ico/announcement_blue.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1860, _page.scss */
+/* line 1863, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop {
   display: none;
   width: 100%;
@@ -3062,11 +3066,11 @@ header {
   padding: 10px 20px 10px 90px;
   cursor: auto;
 }
-/* line 1867, _page.scss */
+/* line 1870, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop {
   padding: 0;
 }
-/* line 1870, _page.scss */
+/* line 1873, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop li {
   display: flex;
   flex-direction: row;
@@ -3074,13 +3078,13 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 1877, _page.scss */
+/* line 1880, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head {
   height: 26px;
   background-color: #EDF4FF;
   align-items: center !important;
 }
-/* line 1881, _page.scss */
+/* line 1884, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p {
   min-width: 1px;
   min-height: 100%;
@@ -3091,7 +3095,7 @@ header {
   color: #013264;
   position: relative;
 }
-/* line 1890, _page.scss */
+/* line 1893, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__head p:before {
   content: "";
   position: absolute;
@@ -3103,12 +3107,12 @@ header {
   right: 0;
   transform: translateY(-50%);
 }
-/* line 1903, _page.scss */
+/* line 1906, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body {
   padding: 15px 0;
   border-bottom: 1px solid rgba(156, 181, 199, 0.4);
 }
-/* line 1908, _page.scss */
+/* line 1911, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__second label {
   width: 20px;
   height: 20px;
@@ -3119,20 +3123,20 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
 }
-/* line 1919, _page.scss */
+/* line 1922, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__third {
   color: #013264;
 }
-/* line 1922, _page.scss */
+/* line 1925, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__four {
   color: #445660;
 }
-/* line 1925, _page.scss */
+/* line 1928, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five {
   color: #4979FF;
   padding-left: 15px;
 }
-/* line 1928, _page.scss */
+/* line 1931, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a {
   color: #4979FF;
   font-weight: bold;
@@ -3143,11 +3147,11 @@ header {
   width: 100%;
   text-align: left;
 }
-/* line 1937, _page.scss */
+/* line 1940, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:hover {
   text-decoration: underline;
 }
-/* line 1940, _page.scss */
+/* line 1943, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__five a:before {
   content: "";
   position: absolute;
@@ -3159,38 +3163,38 @@ header {
   background: url("../assets/img/ico/caret_down_b.svg") no-repeat center;
   background-size: contain;
 }
-/* line 1953, _page.scss */
+/* line 1956, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__six {
   color: #445660;
 }
-/* line 1956, _page.scss */
+/* line 1959, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__seven {
   color: #445660;
 }
-/* line 1959, _page.scss */
+/* line 1962, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop__body .line__eight {
   color: #445660;
 }
-/* line 1965, _page.scss */
+/* line 1968, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__second {
   margin-right: 20px;
   width: 20px;
 }
-/* line 1969, _page.scss */
+/* line 1972, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__third {
   width: 40%;
   padding-right: 10px;
 }
-/* line 1973, _page.scss */
+/* line 1976, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__eight {
   width: 10%;
 }
-/* line 1977, _page.scss */
+/* line 1980, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable {
   position: relative;
   height: 25px;
 }
-/* line 1980, _page.scss */
+/* line 1983, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable:before {
   content: "";
   position: absolute;
@@ -3201,17 +3205,17 @@ header {
   width: 12px;
   background-color: #445660;
 }
-/* line 1990, _page.scss */
+/* line 1993, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line-drop.disable * {
   display: none;
 }
-/* line 1995, _page.scss */
+/* line 1998, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special {
   width: 100%;
   padding: 10px 0 10px 65px;
   position: relative;
 }
-/* line 1999, _page.scss */
+/* line 2002, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special:before {
   content: "";
   position: absolute;
@@ -3222,7 +3226,7 @@ header {
   background: url("../assets/img/ico/report_problem.svg") no-repeat center;
   background-size: contain;
 }
-/* line 2009, _page.scss */
+/* line 2012, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3230,7 +3234,7 @@ header {
   font-weight: normal;
   color: black;
 }
-/* line 2015, _page.scss */
+/* line 2018, _page.scss */
 .mod-discussion .catalog__window__body__line.line-body .line__drop .line__special p span {
   font-family: "Europe Normal";
   font-size: 14px;
@@ -3238,16 +3242,16 @@ header {
   font-weight: normal;
   color: #BF2C37;
 }
-/* line 2030, _page.scss */
+/* line 2033, _page.scss */
 .mod-discussion .catalog__window__body__line .line__six {
   width: 11%;
 }
-/* line 2033, _page.scss */
+/* line 2036, _page.scss */
 .mod-discussion .catalog__window__body__line .line__seven {
   width: 12%;
 }
 
-/* line 2042, _page.scss */
+/* line 2045, _page.scss */
 .light-box {
   display: none;
   position: fixed;
@@ -3259,11 +3263,11 @@ header {
   z-index: 10;
   padding: 100px 0 0 70px;
 }
-/* line 2044, _page.scss */
+/* line 2047, _page.scss */
 .light-box.active {
   display: block;
 }
-/* line 2055, _page.scss */
+/* line 2058, _page.scss */
 .light-box__photo {
   display: none;
   width: 75%;
@@ -3275,23 +3279,23 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2057, _page.scss */
+/* line 2060, _page.scss */
 .light-box__photo.active {
   display: block;
 }
-/* line 2068, _page.scss */
+/* line 2071, _page.scss */
 .light-box__photo__item {
   display: none;
 }
-/* line 2070, _page.scss */
+/* line 2073, _page.scss */
 .light-box__photo__item.active {
   display: block;
 }
-/* line 2073, _page.scss */
+/* line 2076, _page.scss */
 .light-box__photo__item img {
   width: 100%;
 }
-/* line 2076, _page.scss */
+/* line 2079, _page.scss */
 .light-box__photo__item p {
   margin: -5px 0 0 0;
   width: 100%;
@@ -3303,7 +3307,7 @@ header {
   font-weight: normal;
   font-size: 20px;
 }
-/* line 2089, _page.scss */
+/* line 2092, _page.scss */
 .light-box__video {
   display: none;
   width: 75%;
@@ -3315,25 +3319,25 @@ header {
   bottom: calc(50% + 100px);
   transform: translate(calc(50% - -35px), calc(50% - -150px));
 }
-/* line 2091, _page.scss */
+/* line 2094, _page.scss */
 .light-box__video.active {
   display: block;
 }
-/* line 2102, _page.scss */
+/* line 2105, _page.scss */
 .light-box__video__item {
   display: none;
   height: 100%;
 }
-/* line 2105, _page.scss */
+/* line 2108, _page.scss */
 .light-box__video__item.active {
   display: block;
 }
-/* line 2108, _page.scss */
+/* line 2111, _page.scss */
 .light-box__video__item video {
   width: 100%;
   height: 100%;
 }
-/* line 2114, _page.scss */
+/* line 2117, _page.scss */
 .light-box button.ico {
   position: absolute;
   right: -36px;
